@@ -105,13 +105,13 @@
 		608F7B812CC0F06B003A2D50 /* ZMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B7F2CC0F06B003A2D50 /* ZMModel.m */; };
 		608F7B842CC0F07B003A2D50 /* ZMView.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B822CC0F07B003A2D50 /* ZMView.h */; };
 		608F7B852CC0F07B003A2D50 /* ZMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B832CC0F07B003A2D50 /* ZMView.m */; };
-		608F7B882CC0FD37003A2D50 /* UIColor+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B862CC0FD37003A2D50 /* UIColor+ZMAddon.h */; };
+		608F7B882CC0FD37003A2D50 /* UIColor+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B862CC0FD37003A2D50 /* UIColor+ZMAddon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		608F7B892CC0FD37003A2D50 /* UIColor+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B872CC0FD37003A2D50 /* UIColor+ZMAddon.m */; };
 		608F7B8C2CC1F94F003A2D50 /* UIView+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B8A2CC1F94F003A2D50 /* UIView+ZMAddon.h */; };
 		608F7B8D2CC1F94F003A2D50 /* UIView+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B8B2CC1F94F003A2D50 /* UIView+ZMAddon.m */; };
 		608F7B922CC230D4003A2D50 /* NSNumber+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B902CC230D4003A2D50 /* NSNumber+ZMAddon.h */; };
 		608F7B932CC230D4003A2D50 /* NSNumber+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B912CC230D4003A2D50 /* NSNumber+ZMAddon.m */; };
-		608F7B962CC23BF5003A2D50 /* ZMStrRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B942CC23BF5003A2D50 /* ZMStrRes.h */; };
+		608F7B962CC23BF5003A2D50 /* ZMStrRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B942CC23BF5003A2D50 /* ZMStrRes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		608F7B972CC23BF5003A2D50 /* ZMStrRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B952CC23BF5003A2D50 /* ZMStrRes.m */; };
 		608F7B9A2CC23E0C003A2D50 /* zh-Hans.strings in Resources */ = {isa = PBXBuildFile; fileRef = 608F7B992CC23E0C003A2D50 /* zh-Hans.strings */; };
 		608F7BA12CC24DAF003A2D50 /* asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608F7BA02CC24DAF003A2D50 /* asset.xcassets */; };
@@ -150,7 +150,7 @@
 		60DB27B82CC7C7C500D36398 /* UITextView+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DB27B62CC7C7C500D36398 /* UITextView+ZMAddon.m */; };
 		60DE43F32CE05114001B2BB1 /* ZMAESCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DE43F12CE05114001B2BB1 /* ZMAESCryptor.h */; };
 		60DE43F42CE05114001B2BB1 /* ZMAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE43F22CE05114001B2BB1 /* ZMAESCryptor.m */; };
-		60E616BE2CBCB24600C11C92 /* UIImageView+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E616BC2CBCB24600C11C92 /* UIImageView+ZMAddon.h */; };
+		60E616BE2CBCB24600C11C92 /* UIImageView+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E616BC2CBCB24600C11C92 /* UIImageView+ZMAddon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60E616BF2CBCB24600C11C92 /* UIImageView+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E616BD2CBCB24600C11C92 /* UIImageView+ZMAddon.m */; };
 		60E812C42CE5F19200674DA8 /* CircleProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E812C22CE5F19200674DA8 /* CircleProgressView.h */; };
 		60E812C52CE5F19200674DA8 /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E812C32CE5F19200674DA8 /* CircleProgressView.m */; };
@@ -668,6 +668,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				603675C32D0002170059BA3E /* ZMMediaGalleryView.h in Headers */,
+				60E616BE2CBCB24600C11C92 /* UIImageView+ZMAddon.h in Headers */,
+				608F7B882CC0FD37003A2D50 /* UIColor+ZMAddon.h in Headers */,
+				608F7B962CC23BF5003A2D50 /* ZMStrRes.h in Headers */,
+				608E2D3B2CB8D968008F8CE1 /* Constant.h in Headers */,
 				603675D92D0023CA0059BA3E /* PrefixHeader.h in Headers */,
 				60D499AA2CDE1823000A8FAE /* ZMSingleUploadRespModel.h in Headers */,
 				60D6D2832CCF436000F03565 /* ZMVideoThumbnailManager.h in Headers */,
@@ -698,13 +702,11 @@
 				608F7B642CC0EC6F003A2D50 /* ZMPicMsgCell.h in Headers */,
 				6051478A2CC79071004C4B7A /* ZMVideoPlayerView.h in Headers */,
 				60B5848C2CDB647B00DE186C /* ZMCacheManager.h in Headers */,
-				608F7B962CC23BF5003A2D50 /* ZMStrRes.h in Headers */,
 				608F7B462CBFCBEC003A2D50 /* ZMTextMsgCell.h in Headers */,
 				608F40062CC8A0E700596F93 /* ZMApis.h in Headers */,
 				605147922CC7A092004C4B7A /* ZMServicerStatusCell.h in Headers */,
 				608F401F2CC8E1C300596F93 /* ZMHistoryRepModel.h in Headers */,
 				60DB27B72CC7C7C500D36398 /* UITextView+ZMAddon.h in Headers */,
-				608E2D3B2CB8D968008F8CE1 /* Constant.h in Headers */,
 				607554592CBFADD6008E989A /* ZMMessage.h in Headers */,
 				60F26CFF2CF411BD007EF307 /* ZMFAQAnswerCell.h in Headers */,
 				608F7B592CC0B7A6003A2D50 /* Header.h in Headers */,
@@ -713,7 +715,6 @@
 				603675D02D0002630059BA3E /* ZMMessageManager.h in Headers */,
 				60B584862CDB3B8700DE186C /* ZMInitUploadRespModel.h in Headers */,
 				608F7B802CC0F06B003A2D50 /* ZMModel.h in Headers */,
-				608F7B882CC0FD37003A2D50 /* UIColor+ZMAddon.h in Headers */,
 				605147B22CC7B12C004C4B7A /* ZMQuestionIsSolveCell.h in Headers */,
 				6051478E2CC7A056004C4B7A /* ZMQueueCell.h in Headers */,
 				608F400A2CC8AA0300596F93 /* ZMResponseModel.h in Headers */,
@@ -728,7 +729,6 @@
 				607554522CBF9E13008E989A /* ZMNodeManager.h in Headers */,
 				603675CB2D0002170059BA3E /* ZMMediaLoadingView.h in Headers */,
 				608F7B842CC0F07B003A2D50 /* ZMView.h in Headers */,
-				60E616BE2CBCB24600C11C92 /* UIImageView+ZMAddon.h in Headers */,
 				608F7B682CC0EC9D003A2D50 /* ZMVideoMsgCell.h in Headers */,
 				608F7BB02CC65989003A2D50 /* ZMChatToolBtn.h in Headers */,
 				608F7B782CC0EF82003A2D50 /* ZMFontRes.h in Headers */,
