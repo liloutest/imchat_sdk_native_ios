@@ -68,9 +68,19 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '12.0'
   spec.framework = 'UIKit'
   spec.requires_arc = true
+  
+  spec.pod_target_xcconfig = {'VALID_ARCHS' => 'arm64 x86_64', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','ARCHS' => '$(ARCHS_STANDARD_64_BIT)','OTHER_LDFLAGS' => '-ObjC','HEADER_SEARCH_PATHS' => ['$(inherited)','$(PODS_ROOT)/Headers/Public','$(SRCROOT)/imchat/**'].join(' ') ,'GCC_PRECOMPILE_PREFIX_HEADER' => 'YES','GCC_PREFIX_HEADER' => '$(PODS_TARGET_SRCROOT)/imchat/Classes/**/*.h' }
+  #spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64','ARCHS' => '$(ARCHS_STANDARD_64_BIT)'}
 
-  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  #spec.prefix_header_file = "imchat/Classes/Common/Header.h"
+  #spec.prefix_header_file = "imchat/Classes/Pages/Chat/ViewController/ZMChatViewController.h"
+  spec.prefix_header_contents = <<-EOS
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import "Header.h"
+
+  EOS
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -86,7 +96,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/liloutest/imchat-ios.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/liloutest/imchat_sdk_native_ios.git" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -97,15 +107,44 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "imchat/Classes/**/*.{m,h,swift,mm}"
+  spec.static_framework = true
   #spec.exclude_files = "Classes/Exclude"
+  #spec.source_files = 'imchat/Classes/Proto/Msggateway.pbobjc.m'
+  #spec.compiler_flags = '-fno-objc-arc'
+  
+  non_arc_files = 'imchat/Classes/Proto/Msggateway.pbobjc.m'
+  spec.exclude_files = non_arc_files
+  spec.subspec 'Proto' do | sp |
+    sp.source_files = non_arc_files
+    sp.requires_arc = false
+  end
 
-  spec.public_header_files = "imchat/*.h"
+  spec.source_files  = ["imchat/Classes/**/*.{m,h}","imchat/Classes/**/**/*.{m,h}","imchat/Classes/Pages/Chat/ViewController/ZMChatViewController.m"]
 
-  spec.dependency 'SocketRocket'
+  #spec.public_header_files = "imchat/*.h"
+  #spec.public_header_files = "imchat/Classes/Common/**/*.h"
+  spec.public_header_files = [
+    'imchat/Classes/**/**/*.h'
+  ]
+
+  #spec.dependency 'SocketRocket'
+  #spec.dependency 'AFNetworking','4.0.1'
+  #spec.dependency 'SocketRocket'
+  #spec.dependency 'Protobuf', '~> 3.19'
+  
   spec.dependency 'AFNetworking','4.0.1'
   spec.dependency 'SocketRocket'
   spec.dependency 'Protobuf', '~> 3.19'
+  spec.dependency 'SDWebImage'
+  spec.dependency 'FMDB/SQLCipher'
+  spec.dependency 'LKDBHelper'
+  spec.dependency 'YYModel'
+  spec.dependency 'TTTAttributedLabel'
+  spec.dependency 'Masonry'
+  spec.dependency 'IQKeyboardManager'
+  spec.dependency 'MJRefresh'
+  spec.dependency 'TZImagePickerController/Basic'
+  spec.dependency 'SVProgressHUD'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -116,6 +155,16 @@ Pod::Spec.new do |spec|
   #
 
   #spec.resource              = "imchat/**/*.{png,bundle,xib,pdf,json,xcassets,mp3,json,storyboard}"
+  #spec.resources = 'imchat/Resource/**/*'
+  
+  # 资源文件配置
+  spec.resource_bundles = {
+    'imchat' => [
+
+      # 其他资源
+      'imchat/Resource/**/*',
+    ]
+  }
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
