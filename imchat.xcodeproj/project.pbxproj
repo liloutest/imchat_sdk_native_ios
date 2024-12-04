@@ -22,6 +22,9 @@
 		603675CD2D0002170059BA3E /* ZMMediaGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675C12D0002170059BA3E /* ZMMediaGalleryView.m */; };
 		603675D02D0002630059BA3E /* ZMMessageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675CE2D0002630059BA3E /* ZMMessageManager.h */; };
 		603675D12D0002630059BA3E /* ZMMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675CF2D0002630059BA3E /* ZMMessageManager.m */; };
+		603675D52D0007C30059BA3E /* Msggateway.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675D22D0007C20059BA3E /* Msggateway.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		603675D62D0007C30059BA3E /* Msggateway.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675D32D0007C20059BA3E /* Msggateway.pbobjc.h */; };
+		603675D72D0007C30059BA3E /* msggateway.proto in Sources */ = {isa = PBXBuildFile; fileRef = 603675D42D0007C30059BA3E /* msggateway.proto */; };
 		6051478A2CC79071004C4B7A /* ZMVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 605147882CC79071004C4B7A /* ZMVideoPlayerView.h */; };
 		6051478B2CC79071004C4B7A /* ZMVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 605147892CC79071004C4B7A /* ZMVideoPlayerView.m */; };
 		6051478E2CC7A056004C4B7A /* ZMQueueCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6051478C2CC7A056004C4B7A /* ZMQueueCell.h */; };
@@ -60,8 +63,6 @@
 		608F400B2CC8AA0300596F93 /* ZMResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40092CC8AA0300596F93 /* ZMResponseModel.m */; };
 		608F400F2CC8AC1100596F93 /* ZMNodesModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F400D2CC8AC1100596F93 /* ZMNodesModel.h */; };
 		608F40102CC8AC1100596F93 /* ZMNodesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F400E2CC8AC1100596F93 /* ZMNodesModel.m */; };
-		608F40132CC8C17800596F93 /* Msggateway.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40112CC8C17800596F93 /* Msggateway.pbobjc.h */; };
-		608F40142CC8C17800596F93 /* Msggateway.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40122CC8C17800596F93 /* Msggateway.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		608F40172CC8DBE100596F93 /* ZMCreateSessionReqModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40152CC8DBE100596F93 /* ZMCreateSessionReqModel.h */; };
 		608F40182CC8DBE100596F93 /* ZMCreateSessionReqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40162CC8DBE100596F93 /* ZMCreateSessionReqModel.m */; };
 		608F401B2CC8DC0400596F93 /* ZMCreateSessionRepModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40192CC8DC0400596F93 /* ZMCreateSessionRepModel.h */; };
@@ -184,6 +185,9 @@
 		603675C12D0002170059BA3E /* ZMMediaGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMMediaGalleryView.m; sourceTree = "<group>"; };
 		603675CE2D0002630059BA3E /* ZMMessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMMessageManager.h; sourceTree = "<group>"; };
 		603675CF2D0002630059BA3E /* ZMMessageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMMessageManager.m; sourceTree = "<group>"; };
+		603675D22D0007C20059BA3E /* Msggateway.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Msggateway.pbobjc.m; sourceTree = "<group>"; };
+		603675D32D0007C20059BA3E /* Msggateway.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Msggateway.pbobjc.h; sourceTree = "<group>"; };
+		603675D42D0007C30059BA3E /* msggateway.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = msggateway.proto; sourceTree = "<group>"; };
 		605147882CC79071004C4B7A /* ZMVideoPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMVideoPlayerView.h; sourceTree = "<group>"; };
 		605147892CC79071004C4B7A /* ZMVideoPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMVideoPlayerView.m; sourceTree = "<group>"; };
 		6051478C2CC7A056004C4B7A /* ZMQueueCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQueueCell.h; sourceTree = "<group>"; };
@@ -222,8 +226,6 @@
 		608F40092CC8AA0300596F93 /* ZMResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMResponseModel.m; sourceTree = "<group>"; };
 		608F400D2CC8AC1100596F93 /* ZMNodesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMNodesModel.h; sourceTree = "<group>"; };
 		608F400E2CC8AC1100596F93 /* ZMNodesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMNodesModel.m; sourceTree = "<group>"; };
-		608F40112CC8C17800596F93 /* Msggateway.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Msggateway.pbobjc.h; path = ../../../../Msggateway.pbobjc.h; sourceTree = "<group>"; };
-		608F40122CC8C17800596F93 /* Msggateway.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Msggateway.pbobjc.m; path = ../../../../Msggateway.pbobjc.m; sourceTree = "<group>"; };
 		608F40152CC8DBE100596F93 /* ZMCreateSessionReqModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMCreateSessionReqModel.h; sourceTree = "<group>"; };
 		608F40162CC8DBE100596F93 /* ZMCreateSessionReqModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMCreateSessionReqModel.m; sourceTree = "<group>"; };
 		608F40192CC8DC0400596F93 /* ZMCreateSessionRepModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMCreateSessionRepModel.h; sourceTree = "<group>"; };
@@ -551,8 +553,9 @@
 		60BAFCD62CB79EE100B2EC54 /* Proto */ = {
 			isa = PBXGroup;
 			children = (
-				608F40112CC8C17800596F93 /* Msggateway.pbobjc.h */,
-				608F40122CC8C17800596F93 /* Msggateway.pbobjc.m */,
+				603675D32D0007C20059BA3E /* Msggateway.pbobjc.h */,
+				603675D22D0007C20059BA3E /* Msggateway.pbobjc.m */,
+				603675D42D0007C30059BA3E /* msggateway.proto */,
 			);
 			path = Proto;
 			sourceTree = "<group>";
@@ -665,7 +668,6 @@
 				60D499AA2CDE1823000A8FAE /* ZMSingleUploadRespModel.h in Headers */,
 				60D6D2832CCF436000F03565 /* ZMVideoThumbnailManager.h in Headers */,
 				60F26CFB2CF4118F007EF307 /* ZMFAQMsgCell.h in Headers */,
-				608F40132CC8C17800596F93 /* Msggateway.pbobjc.h in Headers */,
 				608F7B562CC0A9DA003A2D50 /* ZMChatInputToolbar.h in Headers */,
 				60D3F29E2CCA3B6000178E1F /* NSDictionary+ZMAddon.h in Headers */,
 				60F26D072CF7105E007EF307 /* ZMAlignLabel.h in Headers */,
@@ -729,6 +731,7 @@
 				608F7B522CBFCF27003A2D50 /* ZMFAQPointMsgCell.h in Headers */,
 				608F7B602CC0EBD2003A2D50 /* ZMTimeMsgCell.h in Headers */,
 				60DE43F32CE05114001B2BB1 /* ZMAESCryptor.h in Headers */,
+				603675D62D0007C30059BA3E /* Msggateway.pbobjc.h in Headers */,
 				608F7B702CC0EF5E003A2D50 /* ZMImageRes.h in Headers */,
 				608F401B2CC8DC0400596F93 /* ZMCreateSessionRepModel.h in Headers */,
 				60F26CF32CED89DF007EF307 /* ZMFloatChatToolView.h in Headers */,
@@ -845,6 +848,7 @@
 				6075544D2CBF70E9008E989A /* ZMNetworkManager.m in Sources */,
 				608F7B712CC0EF5E003A2D50 /* ZMImageRes.m in Sources */,
 				608F403C2CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.m in Sources */,
+				603675D72D0007C30059BA3E /* msggateway.proto in Sources */,
 				608F40242CC8EE1E00596F93 /* ZMChatSendMsgReqModel.m in Sources */,
 				6051478F2CC7A056004C4B7A /* ZMQueueCell.m in Sources */,
 				60D3F2A72CCA3B7A00178E1F /* NSString+ZMAddon.m in Sources */,
@@ -868,7 +872,6 @@
 				603675C42D0002170059BA3E /* ZMMediaLoadingView.m in Sources */,
 				603675D12D0002630059BA3E /* ZMMessageManager.m in Sources */,
 				60F26D082CF7105E007EF307 /* ZMAlignLabel.m in Sources */,
-				608F40142CC8C17800596F93 /* Msggateway.pbobjc.m in Sources */,
 				608F7B812CC0F06B003A2D50 /* ZMModel.m in Sources */,
 				608F7B892CC0FD37003A2D50 /* UIColor+ZMAddon.m in Sources */,
 				608F7B572CC0A9DA003A2D50 /* ZMChatInputToolbar.m in Sources */,
@@ -881,6 +884,7 @@
 				60F26CF42CED89DF007EF307 /* ZMFloatChatToolView.m in Sources */,
 				608F7B7D2CC0F00F003A2D50 /* ZMBaseViewController.m in Sources */,
 				605F4D372CBD2547000308B3 /* ZMDatabaseManager.m in Sources */,
+				603675D52D0007C30059BA3E /* Msggateway.pbobjc.m in Sources */,
 				608F7B6D2CC0EEB3003A2D50 /* UIImage+ZMAddon.m in Sources */,
 				603675C22D0002170059BA3E /* ZMLikeButton.m in Sources */,
 				605147AF2CC7A8A9004C4B7A /* ZMLabel.m in Sources */,
