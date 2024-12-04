@@ -1,0 +1,1151 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FD296438C1A5AADAD738DF7 /* Pods_imchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052A1CDC4DFD9DF521F1CF20 /* Pods_imchat.framework */; };
+		603675C22D0002170059BA3E /* ZMLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675B62D0002170059BA3E /* ZMLikeButton.m */; };
+		603675C32D0002170059BA3E /* ZMMediaGalleryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675B72D0002170059BA3E /* ZMMediaGalleryView.h */; };
+		603675C42D0002170059BA3E /* ZMMediaLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675B82D0002170059BA3E /* ZMMediaLoadingView.m */; };
+		603675C52D0002170059BA3E /* ZMPopMsgTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675B92D0002170059BA3E /* ZMPopMsgTipView.h */; };
+		603675C62D0002170059BA3E /* ZMTableHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675BA2D0002170059BA3E /* ZMTableHeaderView.h */; };
+		603675C72D0002170059BA3E /* ZMFullScreenTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675BB2D0002170059BA3E /* ZMFullScreenTextView.h */; };
+		603675C82D0002170059BA3E /* ZMTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675BC2D0002170059BA3E /* ZMTableHeaderView.m */; };
+		603675C92D0002170059BA3E /* ZMFullScreenTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675BD2D0002170059BA3E /* ZMFullScreenTextView.m */; };
+		603675CA2D0002170059BA3E /* ZMPopMsgTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675BE2D0002170059BA3E /* ZMPopMsgTipView.m */; };
+		603675CB2D0002170059BA3E /* ZMMediaLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675BF2D0002170059BA3E /* ZMMediaLoadingView.h */; };
+		603675CC2D0002170059BA3E /* ZMLikeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675C02D0002170059BA3E /* ZMLikeButton.h */; };
+		603675CD2D0002170059BA3E /* ZMMediaGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675C12D0002170059BA3E /* ZMMediaGalleryView.m */; };
+		603675D02D0002630059BA3E /* ZMMessageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675CE2D0002630059BA3E /* ZMMessageManager.h */; };
+		603675D12D0002630059BA3E /* ZMMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675CF2D0002630059BA3E /* ZMMessageManager.m */; };
+		6051478A2CC79071004C4B7A /* ZMVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 605147882CC79071004C4B7A /* ZMVideoPlayerView.h */; };
+		6051478B2CC79071004C4B7A /* ZMVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 605147892CC79071004C4B7A /* ZMVideoPlayerView.m */; };
+		6051478E2CC7A056004C4B7A /* ZMQueueCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6051478C2CC7A056004C4B7A /* ZMQueueCell.h */; };
+		6051478F2CC7A056004C4B7A /* ZMQueueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6051478D2CC7A056004C4B7A /* ZMQueueCell.m */; };
+		605147922CC7A092004C4B7A /* ZMServicerStatusCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 605147902CC7A092004C4B7A /* ZMServicerStatusCell.h */; };
+		605147932CC7A092004C4B7A /* ZMServicerStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 605147912CC7A092004C4B7A /* ZMServicerStatusCell.m */; };
+		605147AA2CC7A45F004C4B7A /* UILabel+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 605147A82CC7A45F004C4B7A /* UILabel+ZMAddon.h */; };
+		605147AB2CC7A45F004C4B7A /* UILabel+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 605147A92CC7A45F004C4B7A /* UILabel+ZMAddon.m */; };
+		605147AE2CC7A8A9004C4B7A /* ZMLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 605147AC2CC7A8A9004C4B7A /* ZMLabel.h */; };
+		605147AF2CC7A8A9004C4B7A /* ZMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 605147AD2CC7A8A9004C4B7A /* ZMLabel.m */; };
+		605147B22CC7B12C004C4B7A /* ZMQuestionIsSolveCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 605147B02CC7B12C004C4B7A /* ZMQuestionIsSolveCell.h */; };
+		605147B32CC7B12C004C4B7A /* ZMQuestionIsSolveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 605147B12CC7B12C004C4B7A /* ZMQuestionIsSolveCell.m */; };
+		605F4D362CBD2547000308B3 /* ZMDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 605F4D342CBD2547000308B3 /* ZMDatabaseManager.h */; };
+		605F4D372CBD2547000308B3 /* ZMDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 605F4D352CBD2547000308B3 /* ZMDatabaseManager.m */; };
+		605F4D3A2CBE0C97000308B3 /* ZMLanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 605F4D382CBE0C97000308B3 /* ZMLanguageManager.h */; };
+		605F4D3B2CBE0C97000308B3 /* ZMLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 605F4D392CBE0C97000308B3 /* ZMLanguageManager.m */; };
+		605F4D3E2CBE0DB1000308B3 /* ZMHttpHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 605F4D3C2CBE0DB1000308B3 /* ZMHttpHelper.h */; };
+		605F4D3F2CBE0DB1000308B3 /* ZMHttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 605F4D3D2CBE0DB1000308B3 /* ZMHttpHelper.m */; };
+		605F4D512CBE4FA6000308B3 /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = 605F4D502CBE4FA6000308B3 /* en.strings */; };
+		6075544D2CBF70E9008E989A /* ZMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6075544B2CBF70E9008E989A /* ZMNetworkManager.m */; };
+		6075544E2CBF70E9008E989A /* ZMNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6075544C2CBF70E9008E989A /* ZMNetworkManager.h */; };
+		607554512CBF9E13008E989A /* ZMNodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6075544F2CBF9E13008E989A /* ZMNodeManager.m */; };
+		607554522CBF9E13008E989A /* ZMNodeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 607554502CBF9E13008E989A /* ZMNodeManager.h */; };
+		607554552CBFAC6F008E989A /* ZMMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 607554532CBFAC6F008E989A /* ZMMessageCell.h */; };
+		607554562CBFAC6F008E989A /* ZMMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 607554542CBFAC6F008E989A /* ZMMessageCell.m */; };
+		607554592CBFADD6008E989A /* ZMMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 607554572CBFADD6008E989A /* ZMMessage.h */; };
+		6075545A2CBFADD6008E989A /* ZMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 607554582CBFADD6008E989A /* ZMMessage.m */; };
+		608E2D302CB7BA14008F8CE1 /* ZMChatViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 608E2D2E2CB7BA14008F8CE1 /* ZMChatViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		608E2D312CB7BA14008F8CE1 /* ZMChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 608E2D2F2CB7BA14008F8CE1 /* ZMChatViewController.m */; };
+		608E2D382CB7EA02008F8CE1 /* ZMWebSocketManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 608E2D362CB7EA02008F8CE1 /* ZMWebSocketManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		608E2D392CB7EA02008F8CE1 /* ZMWebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 608E2D372CB7EA02008F8CE1 /* ZMWebSocketManager.m */; };
+		608E2D3B2CB8D968008F8CE1 /* Constant.h in Headers */ = {isa = PBXBuildFile; fileRef = 608E2D3A2CB8D968008F8CE1 /* Constant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		608F40062CC8A0E700596F93 /* ZMApis.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40042CC8A0E700596F93 /* ZMApis.h */; };
+		608F40072CC8A0E700596F93 /* ZMApis.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40052CC8A0E700596F93 /* ZMApis.m */; };
+		608F400A2CC8AA0300596F93 /* ZMResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40082CC8AA0300596F93 /* ZMResponseModel.h */; };
+		608F400B2CC8AA0300596F93 /* ZMResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40092CC8AA0300596F93 /* ZMResponseModel.m */; };
+		608F400F2CC8AC1100596F93 /* ZMNodesModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F400D2CC8AC1100596F93 /* ZMNodesModel.h */; };
+		608F40102CC8AC1100596F93 /* ZMNodesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F400E2CC8AC1100596F93 /* ZMNodesModel.m */; };
+		608F40132CC8C17800596F93 /* Msggateway.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40112CC8C17800596F93 /* Msggateway.pbobjc.h */; };
+		608F40142CC8C17800596F93 /* Msggateway.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40122CC8C17800596F93 /* Msggateway.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		608F40172CC8DBE100596F93 /* ZMCreateSessionReqModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40152CC8DBE100596F93 /* ZMCreateSessionReqModel.h */; };
+		608F40182CC8DBE100596F93 /* ZMCreateSessionReqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40162CC8DBE100596F93 /* ZMCreateSessionReqModel.m */; };
+		608F401B2CC8DC0400596F93 /* ZMCreateSessionRepModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40192CC8DC0400596F93 /* ZMCreateSessionRepModel.h */; };
+		608F401C2CC8DC0400596F93 /* ZMCreateSessionRepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F401A2CC8DC0400596F93 /* ZMCreateSessionRepModel.m */; };
+		608F401F2CC8E1C300596F93 /* ZMHistoryRepModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F401D2CC8E1C300596F93 /* ZMHistoryRepModel.h */; };
+		608F40202CC8E1C300596F93 /* ZMHistoryRepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F401E2CC8E1C300596F93 /* ZMHistoryRepModel.m */; };
+		608F40232CC8EE1E00596F93 /* ZMChatSendMsgReqModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40212CC8EE1E00596F93 /* ZMChatSendMsgReqModel.h */; };
+		608F40242CC8EE1E00596F93 /* ZMChatSendMsgReqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40222CC8EE1E00596F93 /* ZMChatSendMsgReqModel.m */; };
+		608F40272CC8EE5800596F93 /* ZMChatSendMsgRepModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40252CC8EE5800596F93 /* ZMChatSendMsgRepModel.h */; };
+		608F40282CC8EE5800596F93 /* ZMChatSendMsgRepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40262CC8EE5800596F93 /* ZMChatSendMsgRepModel.m */; };
+		608F40372CC907A100596F93 /* MsgEntityToServer+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40352CC907A100596F93 /* MsgEntityToServer+ZMAddon.h */; };
+		608F40382CC907A100596F93 /* MsgEntityToServer+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F40362CC907A100596F93 /* MsgEntityToServer+ZMAddon.m */; };
+		608F403B2CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F40392CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.h */; };
+		608F403C2CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F403A2CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.m */; };
+		608F7B462CBFCBEC003A2D50 /* ZMTextMsgCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B442CBFCBEC003A2D50 /* ZMTextMsgCell.h */; };
+		608F7B472CBFCBEC003A2D50 /* ZMTextMsgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B452CBFCBEC003A2D50 /* ZMTextMsgCell.m */; };
+		608F7B522CBFCF27003A2D50 /* ZMFAQPointMsgCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B502CBFCF27003A2D50 /* ZMFAQPointMsgCell.h */; };
+		608F7B532CBFCF27003A2D50 /* ZMFAQPointMsgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B512CBFCF27003A2D50 /* ZMFAQPointMsgCell.m */; };
+		608F7B562CC0A9DA003A2D50 /* ZMChatInputToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B542CC0A9D9003A2D50 /* ZMChatInputToolbar.h */; };
+		608F7B572CC0A9DA003A2D50 /* ZMChatInputToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B552CC0A9D9003A2D50 /* ZMChatInputToolbar.m */; };
+		608F7B592CC0B7A6003A2D50 /* Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B582CC0B7A6003A2D50 /* Header.h */; };
+		608F7B602CC0EBD2003A2D50 /* ZMTimeMsgCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B5E2CC0EBD2003A2D50 /* ZMTimeMsgCell.h */; };
+		608F7B612CC0EBD2003A2D50 /* ZMTimeMsgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B5F2CC0EBD2003A2D50 /* ZMTimeMsgCell.m */; };
+		608F7B642CC0EC6F003A2D50 /* ZMPicMsgCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B622CC0EC6F003A2D50 /* ZMPicMsgCell.h */; };
+		608F7B652CC0EC6F003A2D50 /* ZMPicMsgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B632CC0EC6F003A2D50 /* ZMPicMsgCell.m */; };
+		608F7B682CC0EC9D003A2D50 /* ZMVideoMsgCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B662CC0EC9D003A2D50 /* ZMVideoMsgCell.h */; };
+		608F7B692CC0EC9D003A2D50 /* ZMVideoMsgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B672CC0EC9D003A2D50 /* ZMVideoMsgCell.m */; };
+		608F7B6C2CC0EEB3003A2D50 /* UIImage+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B6A2CC0EEB3003A2D50 /* UIImage+ZMAddon.h */; };
+		608F7B6D2CC0EEB3003A2D50 /* UIImage+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B6B2CC0EEB3003A2D50 /* UIImage+ZMAddon.m */; };
+		608F7B702CC0EF5E003A2D50 /* ZMImageRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B6E2CC0EF5E003A2D50 /* ZMImageRes.h */; };
+		608F7B712CC0EF5E003A2D50 /* ZMImageRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B6F2CC0EF5E003A2D50 /* ZMImageRes.m */; };
+		608F7B742CC0EF6E003A2D50 /* ZMColorRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B722CC0EF6E003A2D50 /* ZMColorRes.h */; };
+		608F7B752CC0EF6E003A2D50 /* ZMColorRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B732CC0EF6E003A2D50 /* ZMColorRes.m */; };
+		608F7B782CC0EF82003A2D50 /* ZMFontRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B762CC0EF82003A2D50 /* ZMFontRes.h */; };
+		608F7B792CC0EF82003A2D50 /* ZMFontRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B772CC0EF82003A2D50 /* ZMFontRes.m */; };
+		608F7B7C2CC0F00F003A2D50 /* ZMBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B7A2CC0F00F003A2D50 /* ZMBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		608F7B7D2CC0F00F003A2D50 /* ZMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B7B2CC0F00F003A2D50 /* ZMBaseViewController.m */; };
+		608F7B802CC0F06B003A2D50 /* ZMModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B7E2CC0F06B003A2D50 /* ZMModel.h */; };
+		608F7B812CC0F06B003A2D50 /* ZMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B7F2CC0F06B003A2D50 /* ZMModel.m */; };
+		608F7B842CC0F07B003A2D50 /* ZMView.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B822CC0F07B003A2D50 /* ZMView.h */; };
+		608F7B852CC0F07B003A2D50 /* ZMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B832CC0F07B003A2D50 /* ZMView.m */; };
+		608F7B882CC0FD37003A2D50 /* UIColor+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B862CC0FD37003A2D50 /* UIColor+ZMAddon.h */; };
+		608F7B892CC0FD37003A2D50 /* UIColor+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B872CC0FD37003A2D50 /* UIColor+ZMAddon.m */; };
+		608F7B8C2CC1F94F003A2D50 /* UIView+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B8A2CC1F94F003A2D50 /* UIView+ZMAddon.h */; };
+		608F7B8D2CC1F94F003A2D50 /* UIView+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B8B2CC1F94F003A2D50 /* UIView+ZMAddon.m */; };
+		608F7B922CC230D4003A2D50 /* NSNumber+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B902CC230D4003A2D50 /* NSNumber+ZMAddon.h */; };
+		608F7B932CC230D4003A2D50 /* NSNumber+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B912CC230D4003A2D50 /* NSNumber+ZMAddon.m */; };
+		608F7B962CC23BF5003A2D50 /* ZMStrRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B942CC23BF5003A2D50 /* ZMStrRes.h */; };
+		608F7B972CC23BF5003A2D50 /* ZMStrRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B952CC23BF5003A2D50 /* ZMStrRes.m */; };
+		608F7B9A2CC23E0C003A2D50 /* zh-Hans.strings in Resources */ = {isa = PBXBuildFile; fileRef = 608F7B992CC23E0C003A2D50 /* zh-Hans.strings */; };
+		608F7BA12CC24DAF003A2D50 /* asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608F7BA02CC24DAF003A2D50 /* asset.xcassets */; };
+		608F7BA42CC5ECF4003A2D50 /* ZMStyleRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7BA22CC5ECF4003A2D50 /* ZMStyleRes.h */; };
+		608F7BA52CC5ECF4003A2D50 /* ZMStyleRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7BA32CC5ECF4003A2D50 /* ZMStyleRes.m */; };
+		608F7BA82CC64DCA003A2D50 /* ZMCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7BA62CC64DCA003A2D50 /* ZMCommon.h */; };
+		608F7BA92CC64DCA003A2D50 /* ZMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7BA72CC64DCA003A2D50 /* ZMCommon.m */; };
+		608F7BAC2CC656CF003A2D50 /* ZMTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7BAA2CC656CF003A2D50 /* ZMTextView.h */; };
+		608F7BAD2CC656CF003A2D50 /* ZMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7BAB2CC656CF003A2D50 /* ZMTextView.m */; };
+		608F7BB02CC65989003A2D50 /* ZMChatToolBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7BAE2CC65989003A2D50 /* ZMChatToolBtn.h */; };
+		608F7BB12CC65989003A2D50 /* ZMChatToolBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7BAF2CC65989003A2D50 /* ZMChatToolBtn.m */; };
+		60B5847E2CDA1DAE00DE186C /* ZMUploadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B5847C2CDA1DAE00DE186C /* ZMUploadManager.h */; };
+		60B5847F2CDA1DAE00DE186C /* ZMUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B5847D2CDA1DAE00DE186C /* ZMUploadManager.m */; };
+		60B584822CDB1AAC00DE186C /* ZMUploadQueueTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B584802CDB1AAC00DE186C /* ZMUploadQueueTask.h */; };
+		60B584832CDB1AAC00DE186C /* ZMUploadQueueTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B584812CDB1AAC00DE186C /* ZMUploadQueueTask.m */; };
+		60B584862CDB3B8700DE186C /* ZMInitUploadRespModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B584842CDB3B8700DE186C /* ZMInitUploadRespModel.h */; };
+		60B584872CDB3B8700DE186C /* ZMInitUploadRespModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B584852CDB3B8700DE186C /* ZMInitUploadRespModel.m */; };
+		60B5848C2CDB647B00DE186C /* ZMCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B5848A2CDB647B00DE186C /* ZMCacheManager.h */; };
+		60B5848D2CDB647B00DE186C /* ZMCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B5848B2CDB647B00DE186C /* ZMCacheManager.m */; };
+		60B584902CDC943800DE186C /* ZMCompleteUploadModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B5848E2CDC943800DE186C /* ZMCompleteUploadModel.h */; };
+		60B584912CDC943800DE186C /* ZMCompleteUploadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B5848F2CDC943800DE186C /* ZMCompleteUploadModel.m */; };
+		60BAFCCD2CB7878500B2EC54 /* imchat.docc in Sources */ = {isa = PBXBuildFile; fileRef = 60BAFCCC2CB7878500B2EC54 /* imchat.docc */; };
+		60D3F29E2CCA3B6000178E1F /* NSDictionary+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D3F29C2CCA3B6000178E1F /* NSDictionary+ZMAddon.h */; };
+		60D3F29F2CCA3B6000178E1F /* NSDictionary+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D3F29D2CCA3B6000178E1F /* NSDictionary+ZMAddon.m */; };
+		60D3F2A22CCA3B6D00178E1F /* NSArray+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D3F2A02CCA3B6D00178E1F /* NSArray+ZMAddon.h */; };
+		60D3F2A32CCA3B6D00178E1F /* NSArray+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D3F2A12CCA3B6D00178E1F /* NSArray+ZMAddon.m */; };
+		60D3F2A62CCA3B7A00178E1F /* NSString+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D3F2A42CCA3B7A00178E1F /* NSString+ZMAddon.h */; };
+		60D3F2A72CCA3B7A00178E1F /* NSString+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D3F2A52CCA3B7A00178E1F /* NSString+ZMAddon.m */; };
+		60D499AA2CDE1823000A8FAE /* ZMSingleUploadRespModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D499A82CDE1823000A8FAE /* ZMSingleUploadRespModel.h */; };
+		60D499AB2CDE1823000A8FAE /* ZMSingleUploadRespModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D499A92CDE1823000A8FAE /* ZMSingleUploadRespModel.m */; };
+		60D6D2832CCF436000F03565 /* ZMVideoThumbnailManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D6D2812CCF436000F03565 /* ZMVideoThumbnailManager.h */; };
+		60D6D2842CCF436000F03565 /* ZMVideoThumbnailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D6D2822CCF436000F03565 /* ZMVideoThumbnailManager.m */; };
+		60DA07C32CE74C8600D19122 /* IMSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DA07C12CE74C8600D19122 /* IMSDK.h */; };
+		60DA07C42CE74C8600D19122 /* IMSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DA07C22CE74C8600D19122 /* IMSDK.m */; };
+		60DB27B72CC7C7C500D36398 /* UITextView+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DB27B52CC7C7C500D36398 /* UITextView+ZMAddon.h */; };
+		60DB27B82CC7C7C500D36398 /* UITextView+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DB27B62CC7C7C500D36398 /* UITextView+ZMAddon.m */; };
+		60DE43F32CE05114001B2BB1 /* ZMAESCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DE43F12CE05114001B2BB1 /* ZMAESCryptor.h */; };
+		60DE43F42CE05114001B2BB1 /* ZMAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE43F22CE05114001B2BB1 /* ZMAESCryptor.m */; };
+		60E616BE2CBCB24600C11C92 /* UIImageView+ZMAddon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E616BC2CBCB24600C11C92 /* UIImageView+ZMAddon.h */; };
+		60E616BF2CBCB24600C11C92 /* UIImageView+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E616BD2CBCB24600C11C92 /* UIImageView+ZMAddon.m */; };
+		60E812C42CE5F19200674DA8 /* CircleProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E812C22CE5F19200674DA8 /* CircleProgressView.h */; };
+		60E812C52CE5F19200674DA8 /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E812C32CE5F19200674DA8 /* CircleProgressView.m */; };
+		60F26CF32CED89DF007EF307 /* ZMFloatChatToolView.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F26CF12CED89DF007EF307 /* ZMFloatChatToolView.h */; };
+		60F26CF42CED89DF007EF307 /* ZMFloatChatToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F26CF22CED89DF007EF307 /* ZMFloatChatToolView.m */; };
+		60F26CF72CEDB073007EF307 /* ZMTimeoutConfigRespModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F26CF52CEDB073007EF307 /* ZMTimeoutConfigRespModel.h */; };
+		60F26CF82CEDB073007EF307 /* ZMTimeoutConfigRespModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F26CF62CEDB073007EF307 /* ZMTimeoutConfigRespModel.m */; };
+		60F26CFB2CF4118F007EF307 /* ZMFAQMsgCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F26CF92CF4118F007EF307 /* ZMFAQMsgCell.h */; };
+		60F26CFC2CF4118F007EF307 /* ZMFAQMsgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F26CFA2CF4118F007EF307 /* ZMFAQMsgCell.m */; };
+		60F26CFF2CF411BD007EF307 /* ZMFAQAnswerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F26CFD2CF411BD007EF307 /* ZMFAQAnswerCell.h */; };
+		60F26D002CF411BD007EF307 /* ZMFAQAnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F26CFE2CF411BD007EF307 /* ZMFAQAnswerCell.m */; };
+		60F26D032CF413E3007EF307 /* ZMFAQBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F26D012CF413E3007EF307 /* ZMFAQBaseCell.h */; };
+		60F26D042CF413E3007EF307 /* ZMFAQBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F26D022CF413E3007EF307 /* ZMFAQBaseCell.m */; };
+		60F26D072CF7105E007EF307 /* ZMAlignLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F26D052CF7105E007EF307 /* ZMAlignLabel.h */; };
+		60F26D082CF7105E007EF307 /* ZMAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F26D062CF7105E007EF307 /* ZMAlignLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		052A1CDC4DFD9DF521F1CF20 /* Pods_imchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D403D0DBD13C31F05357F8 /* Pods-imchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imchat.release.xcconfig"; path = "Target Support Files/Pods-imchat/Pods-imchat.release.xcconfig"; sourceTree = "<group>"; };
+		298DB90B6B490DC198D2E7CE /* Pods-imchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imchat.debug.xcconfig"; path = "Target Support Files/Pods-imchat/Pods-imchat.debug.xcconfig"; sourceTree = "<group>"; };
+		603675B62D0002170059BA3E /* ZMLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMLikeButton.m; sourceTree = "<group>"; };
+		603675B72D0002170059BA3E /* ZMMediaGalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMMediaGalleryView.h; sourceTree = "<group>"; };
+		603675B82D0002170059BA3E /* ZMMediaLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMMediaLoadingView.m; sourceTree = "<group>"; };
+		603675B92D0002170059BA3E /* ZMPopMsgTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMPopMsgTipView.h; sourceTree = "<group>"; };
+		603675BA2D0002170059BA3E /* ZMTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMTableHeaderView.h; sourceTree = "<group>"; };
+		603675BB2D0002170059BA3E /* ZMFullScreenTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMFullScreenTextView.h; sourceTree = "<group>"; };
+		603675BC2D0002170059BA3E /* ZMTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMTableHeaderView.m; sourceTree = "<group>"; };
+		603675BD2D0002170059BA3E /* ZMFullScreenTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMFullScreenTextView.m; sourceTree = "<group>"; };
+		603675BE2D0002170059BA3E /* ZMPopMsgTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMPopMsgTipView.m; sourceTree = "<group>"; };
+		603675BF2D0002170059BA3E /* ZMMediaLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMMediaLoadingView.h; sourceTree = "<group>"; };
+		603675C02D0002170059BA3E /* ZMLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMLikeButton.h; sourceTree = "<group>"; };
+		603675C12D0002170059BA3E /* ZMMediaGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMMediaGalleryView.m; sourceTree = "<group>"; };
+		603675CE2D0002630059BA3E /* ZMMessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMMessageManager.h; sourceTree = "<group>"; };
+		603675CF2D0002630059BA3E /* ZMMessageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMMessageManager.m; sourceTree = "<group>"; };
+		605147882CC79071004C4B7A /* ZMVideoPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMVideoPlayerView.h; sourceTree = "<group>"; };
+		605147892CC79071004C4B7A /* ZMVideoPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMVideoPlayerView.m; sourceTree = "<group>"; };
+		6051478C2CC7A056004C4B7A /* ZMQueueCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQueueCell.h; sourceTree = "<group>"; };
+		6051478D2CC7A056004C4B7A /* ZMQueueCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMQueueCell.m; sourceTree = "<group>"; };
+		605147902CC7A092004C4B7A /* ZMServicerStatusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMServicerStatusCell.h; sourceTree = "<group>"; };
+		605147912CC7A092004C4B7A /* ZMServicerStatusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMServicerStatusCell.m; sourceTree = "<group>"; };
+		605147A82CC7A45F004C4B7A /* UILabel+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+ZMAddon.h"; sourceTree = "<group>"; };
+		605147A92CC7A45F004C4B7A /* UILabel+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ZMAddon.m"; sourceTree = "<group>"; };
+		605147AC2CC7A8A9004C4B7A /* ZMLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMLabel.h; sourceTree = "<group>"; };
+		605147AD2CC7A8A9004C4B7A /* ZMLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMLabel.m; sourceTree = "<group>"; };
+		605147B02CC7B12C004C4B7A /* ZMQuestionIsSolveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQuestionIsSolveCell.h; sourceTree = "<group>"; };
+		605147B12CC7B12C004C4B7A /* ZMQuestionIsSolveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMQuestionIsSolveCell.m; sourceTree = "<group>"; };
+		605F4D342CBD2547000308B3 /* ZMDatabaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMDatabaseManager.h; sourceTree = "<group>"; };
+		605F4D352CBD2547000308B3 /* ZMDatabaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMDatabaseManager.m; sourceTree = "<group>"; };
+		605F4D382CBE0C97000308B3 /* ZMLanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMLanguageManager.h; sourceTree = "<group>"; };
+		605F4D392CBE0C97000308B3 /* ZMLanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMLanguageManager.m; sourceTree = "<group>"; };
+		605F4D3C2CBE0DB1000308B3 /* ZMHttpHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMHttpHelper.h; sourceTree = "<group>"; };
+		605F4D3D2CBE0DB1000308B3 /* ZMHttpHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMHttpHelper.m; sourceTree = "<group>"; };
+		605F4D502CBE4FA6000308B3 /* en.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = en.strings; sourceTree = "<group>"; };
+		6075544B2CBF70E9008E989A /* ZMNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMNetworkManager.m; sourceTree = "<group>"; };
+		6075544C2CBF70E9008E989A /* ZMNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMNetworkManager.h; sourceTree = "<group>"; };
+		6075544F2CBF9E13008E989A /* ZMNodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMNodeManager.m; sourceTree = "<group>"; };
+		607554502CBF9E13008E989A /* ZMNodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMNodeManager.h; sourceTree = "<group>"; };
+		607554532CBFAC6F008E989A /* ZMMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMessageCell.h; sourceTree = "<group>"; };
+		607554542CBFAC6F008E989A /* ZMMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMessageCell.m; sourceTree = "<group>"; };
+		607554572CBFADD6008E989A /* ZMMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMessage.h; sourceTree = "<group>"; };
+		607554582CBFADD6008E989A /* ZMMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMessage.m; sourceTree = "<group>"; };
+		608E2D2E2CB7BA14008F8CE1 /* ZMChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMChatViewController.h; sourceTree = "<group>"; };
+		608E2D2F2CB7BA14008F8CE1 /* ZMChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMChatViewController.m; sourceTree = "<group>"; };
+		608E2D362CB7EA02008F8CE1 /* ZMWebSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMWebSocketManager.h; sourceTree = "<group>"; };
+		608E2D372CB7EA02008F8CE1 /* ZMWebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMWebSocketManager.m; sourceTree = "<group>"; };
+		608E2D3A2CB8D968008F8CE1 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		608F40042CC8A0E700596F93 /* ZMApis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMApis.h; sourceTree = "<group>"; };
+		608F40052CC8A0E700596F93 /* ZMApis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMApis.m; sourceTree = "<group>"; };
+		608F40082CC8AA0300596F93 /* ZMResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMResponseModel.h; sourceTree = "<group>"; };
+		608F40092CC8AA0300596F93 /* ZMResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMResponseModel.m; sourceTree = "<group>"; };
+		608F400D2CC8AC1100596F93 /* ZMNodesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMNodesModel.h; sourceTree = "<group>"; };
+		608F400E2CC8AC1100596F93 /* ZMNodesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMNodesModel.m; sourceTree = "<group>"; };
+		608F40112CC8C17800596F93 /* Msggateway.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Msggateway.pbobjc.h; path = ../../../../Msggateway.pbobjc.h; sourceTree = "<group>"; };
+		608F40122CC8C17800596F93 /* Msggateway.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Msggateway.pbobjc.m; path = ../../../../Msggateway.pbobjc.m; sourceTree = "<group>"; };
+		608F40152CC8DBE100596F93 /* ZMCreateSessionReqModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMCreateSessionReqModel.h; sourceTree = "<group>"; };
+		608F40162CC8DBE100596F93 /* ZMCreateSessionReqModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMCreateSessionReqModel.m; sourceTree = "<group>"; };
+		608F40192CC8DC0400596F93 /* ZMCreateSessionRepModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMCreateSessionRepModel.h; sourceTree = "<group>"; };
+		608F401A2CC8DC0400596F93 /* ZMCreateSessionRepModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMCreateSessionRepModel.m; sourceTree = "<group>"; };
+		608F401D2CC8E1C300596F93 /* ZMHistoryRepModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMHistoryRepModel.h; sourceTree = "<group>"; };
+		608F401E2CC8E1C300596F93 /* ZMHistoryRepModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMHistoryRepModel.m; sourceTree = "<group>"; };
+		608F40212CC8EE1E00596F93 /* ZMChatSendMsgReqModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMChatSendMsgReqModel.h; sourceTree = "<group>"; };
+		608F40222CC8EE1E00596F93 /* ZMChatSendMsgReqModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMChatSendMsgReqModel.m; sourceTree = "<group>"; };
+		608F40252CC8EE5800596F93 /* ZMChatSendMsgRepModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMChatSendMsgRepModel.h; sourceTree = "<group>"; };
+		608F40262CC8EE5800596F93 /* ZMChatSendMsgRepModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMChatSendMsgRepModel.m; sourceTree = "<group>"; };
+		608F40352CC907A100596F93 /* MsgEntityToServer+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MsgEntityToServer+ZMAddon.h"; sourceTree = "<group>"; };
+		608F40362CC907A100596F93 /* MsgEntityToServer+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MsgEntityToServer+ZMAddon.m"; sourceTree = "<group>"; };
+		608F40392CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MsgEntityToFrontEnd+ZMAddon.h"; sourceTree = "<group>"; };
+		608F403A2CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MsgEntityToFrontEnd+ZMAddon.m"; sourceTree = "<group>"; };
+		608F7B442CBFCBEC003A2D50 /* ZMTextMsgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTextMsgCell.h; sourceTree = "<group>"; };
+		608F7B452CBFCBEC003A2D50 /* ZMTextMsgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTextMsgCell.m; sourceTree = "<group>"; };
+		608F7B502CBFCF27003A2D50 /* ZMFAQPointMsgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFAQPointMsgCell.h; sourceTree = "<group>"; };
+		608F7B512CBFCF27003A2D50 /* ZMFAQPointMsgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFAQPointMsgCell.m; sourceTree = "<group>"; };
+		608F7B542CC0A9D9003A2D50 /* ZMChatInputToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMChatInputToolbar.h; sourceTree = "<group>"; };
+		608F7B552CC0A9D9003A2D50 /* ZMChatInputToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMChatInputToolbar.m; sourceTree = "<group>"; };
+		608F7B582CC0B7A6003A2D50 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		608F7B5E2CC0EBD2003A2D50 /* ZMTimeMsgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTimeMsgCell.h; sourceTree = "<group>"; };
+		608F7B5F2CC0EBD2003A2D50 /* ZMTimeMsgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTimeMsgCell.m; sourceTree = "<group>"; };
+		608F7B622CC0EC6F003A2D50 /* ZMPicMsgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMPicMsgCell.h; sourceTree = "<group>"; };
+		608F7B632CC0EC6F003A2D50 /* ZMPicMsgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMPicMsgCell.m; sourceTree = "<group>"; };
+		608F7B662CC0EC9D003A2D50 /* ZMVideoMsgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMVideoMsgCell.h; sourceTree = "<group>"; };
+		608F7B672CC0EC9D003A2D50 /* ZMVideoMsgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMVideoMsgCell.m; sourceTree = "<group>"; };
+		608F7B6A2CC0EEB3003A2D50 /* UIImage+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZMAddon.h"; sourceTree = "<group>"; };
+		608F7B6B2CC0EEB3003A2D50 /* UIImage+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZMAddon.m"; sourceTree = "<group>"; };
+		608F7B6E2CC0EF5E003A2D50 /* ZMImageRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMImageRes.h; sourceTree = "<group>"; };
+		608F7B6F2CC0EF5E003A2D50 /* ZMImageRes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMImageRes.m; sourceTree = "<group>"; };
+		608F7B722CC0EF6E003A2D50 /* ZMColorRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMColorRes.h; sourceTree = "<group>"; };
+		608F7B732CC0EF6E003A2D50 /* ZMColorRes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMColorRes.m; sourceTree = "<group>"; };
+		608F7B762CC0EF82003A2D50 /* ZMFontRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFontRes.h; sourceTree = "<group>"; };
+		608F7B772CC0EF82003A2D50 /* ZMFontRes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFontRes.m; sourceTree = "<group>"; };
+		608F7B7A2CC0F00F003A2D50 /* ZMBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMBaseViewController.h; sourceTree = "<group>"; };
+		608F7B7B2CC0F00F003A2D50 /* ZMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMBaseViewController.m; sourceTree = "<group>"; };
+		608F7B7E2CC0F06B003A2D50 /* ZMModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMModel.h; sourceTree = "<group>"; };
+		608F7B7F2CC0F06B003A2D50 /* ZMModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMModel.m; sourceTree = "<group>"; };
+		608F7B822CC0F07B003A2D50 /* ZMView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMView.h; sourceTree = "<group>"; };
+		608F7B832CC0F07B003A2D50 /* ZMView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMView.m; sourceTree = "<group>"; };
+		608F7B862CC0FD37003A2D50 /* UIColor+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZMAddon.h"; sourceTree = "<group>"; };
+		608F7B872CC0FD37003A2D50 /* UIColor+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZMAddon.m"; sourceTree = "<group>"; };
+		608F7B8A2CC1F94F003A2D50 /* UIView+ZMAddon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ZMAddon.h"; path = "imchat/Classes/Common/Category/UIView+ZMAddon.h"; sourceTree = SOURCE_ROOT; };
+		608F7B8B2CC1F94F003A2D50 /* UIView+ZMAddon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZMAddon.m"; path = "imchat/Classes/Common/Category/UIView+ZMAddon.m"; sourceTree = SOURCE_ROOT; };
+		608F7B902CC230D4003A2D50 /* NSNumber+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ZMAddon.h"; sourceTree = "<group>"; };
+		608F7B912CC230D4003A2D50 /* NSNumber+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ZMAddon.m"; sourceTree = "<group>"; };
+		608F7B942CC23BF5003A2D50 /* ZMStrRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMStrRes.h; sourceTree = "<group>"; };
+		608F7B952CC23BF5003A2D50 /* ZMStrRes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMStrRes.m; sourceTree = "<group>"; };
+		608F7B992CC23E0C003A2D50 /* zh-Hans.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "zh-Hans.strings"; sourceTree = "<group>"; };
+		608F7BA02CC24DAF003A2D50 /* asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = asset.xcassets; sourceTree = "<group>"; };
+		608F7BA22CC5ECF4003A2D50 /* ZMStyleRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMStyleRes.h; sourceTree = "<group>"; };
+		608F7BA32CC5ECF4003A2D50 /* ZMStyleRes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMStyleRes.m; sourceTree = "<group>"; };
+		608F7BA62CC64DCA003A2D50 /* ZMCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMCommon.h; sourceTree = "<group>"; };
+		608F7BA72CC64DCA003A2D50 /* ZMCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMCommon.m; sourceTree = "<group>"; };
+		608F7BAA2CC656CF003A2D50 /* ZMTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTextView.h; sourceTree = "<group>"; };
+		608F7BAB2CC656CF003A2D50 /* ZMTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTextView.m; sourceTree = "<group>"; };
+		608F7BAE2CC65989003A2D50 /* ZMChatToolBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMChatToolBtn.h; sourceTree = "<group>"; };
+		608F7BAF2CC65989003A2D50 /* ZMChatToolBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMChatToolBtn.m; sourceTree = "<group>"; };
+		60B5847C2CDA1DAE00DE186C /* ZMUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMUploadManager.h; sourceTree = "<group>"; };
+		60B5847D2CDA1DAE00DE186C /* ZMUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMUploadManager.m; sourceTree = "<group>"; };
+		60B584802CDB1AAC00DE186C /* ZMUploadQueueTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMUploadQueueTask.h; sourceTree = "<group>"; };
+		60B584812CDB1AAC00DE186C /* ZMUploadQueueTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMUploadQueueTask.m; sourceTree = "<group>"; };
+		60B584842CDB3B8700DE186C /* ZMInitUploadRespModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMInitUploadRespModel.h; sourceTree = "<group>"; };
+		60B584852CDB3B8700DE186C /* ZMInitUploadRespModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMInitUploadRespModel.m; sourceTree = "<group>"; };
+		60B584882CDB450800DE186C /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		60B5848A2CDB647B00DE186C /* ZMCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMCacheManager.h; sourceTree = "<group>"; };
+		60B5848B2CDB647B00DE186C /* ZMCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMCacheManager.m; sourceTree = "<group>"; };
+		60B5848E2CDC943800DE186C /* ZMCompleteUploadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMCompleteUploadModel.h; sourceTree = "<group>"; };
+		60B5848F2CDC943800DE186C /* ZMCompleteUploadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMCompleteUploadModel.m; sourceTree = "<group>"; };
+		60BAFCC82CB7878500B2EC54 /* imchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = imchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60BAFCCC2CB7878500B2EC54 /* imchat.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = imchat.docc; sourceTree = "<group>"; };
+		60D3F29C2CCA3B6000178E1F /* NSDictionary+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZMAddon.h"; sourceTree = "<group>"; };
+		60D3F29D2CCA3B6000178E1F /* NSDictionary+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZMAddon.m"; sourceTree = "<group>"; };
+		60D3F2A02CCA3B6D00178E1F /* NSArray+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZMAddon.h"; sourceTree = "<group>"; };
+		60D3F2A12CCA3B6D00178E1F /* NSArray+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZMAddon.m"; sourceTree = "<group>"; };
+		60D3F2A42CCA3B7A00178E1F /* NSString+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZMAddon.h"; sourceTree = "<group>"; };
+		60D3F2A52CCA3B7A00178E1F /* NSString+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZMAddon.m"; sourceTree = "<group>"; };
+		60D499A82CDE1823000A8FAE /* ZMSingleUploadRespModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMSingleUploadRespModel.h; sourceTree = "<group>"; };
+		60D499A92CDE1823000A8FAE /* ZMSingleUploadRespModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMSingleUploadRespModel.m; sourceTree = "<group>"; };
+		60D6D2812CCF436000F03565 /* ZMVideoThumbnailManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMVideoThumbnailManager.h; sourceTree = "<group>"; };
+		60D6D2822CCF436000F03565 /* ZMVideoThumbnailManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMVideoThumbnailManager.m; sourceTree = "<group>"; };
+		60DA07C12CE74C8600D19122 /* IMSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMSDK.h; sourceTree = "<group>"; };
+		60DA07C22CE74C8600D19122 /* IMSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMSDK.m; sourceTree = "<group>"; };
+		60DB27B52CC7C7C500D36398 /* UITextView+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZMAddon.h"; sourceTree = "<group>"; };
+		60DB27B62CC7C7C500D36398 /* UITextView+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZMAddon.m"; sourceTree = "<group>"; };
+		60DE43F12CE05114001B2BB1 /* ZMAESCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAESCryptor.h; sourceTree = "<group>"; };
+		60DE43F22CE05114001B2BB1 /* ZMAESCryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAESCryptor.m; sourceTree = "<group>"; };
+		60E616BC2CBCB24600C11C92 /* UIImageView+ZMAddon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZMAddon.h"; sourceTree = "<group>"; };
+		60E616BD2CBCB24600C11C92 /* UIImageView+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZMAddon.m"; sourceTree = "<group>"; };
+		60E812C22CE5F19200674DA8 /* CircleProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleProgressView.h; sourceTree = "<group>"; };
+		60E812C32CE5F19200674DA8 /* CircleProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleProgressView.m; sourceTree = "<group>"; };
+		60F26CF12CED89DF007EF307 /* ZMFloatChatToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFloatChatToolView.h; sourceTree = "<group>"; };
+		60F26CF22CED89DF007EF307 /* ZMFloatChatToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFloatChatToolView.m; sourceTree = "<group>"; };
+		60F26CF52CEDB073007EF307 /* ZMTimeoutConfigRespModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTimeoutConfigRespModel.h; sourceTree = "<group>"; };
+		60F26CF62CEDB073007EF307 /* ZMTimeoutConfigRespModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTimeoutConfigRespModel.m; sourceTree = "<group>"; };
+		60F26CF92CF4118F007EF307 /* ZMFAQMsgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFAQMsgCell.h; sourceTree = "<group>"; };
+		60F26CFA2CF4118F007EF307 /* ZMFAQMsgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFAQMsgCell.m; sourceTree = "<group>"; };
+		60F26CFD2CF411BD007EF307 /* ZMFAQAnswerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFAQAnswerCell.h; sourceTree = "<group>"; };
+		60F26CFE2CF411BD007EF307 /* ZMFAQAnswerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFAQAnswerCell.m; sourceTree = "<group>"; };
+		60F26D012CF413E3007EF307 /* ZMFAQBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFAQBaseCell.h; sourceTree = "<group>"; };
+		60F26D022CF413E3007EF307 /* ZMFAQBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFAQBaseCell.m; sourceTree = "<group>"; };
+		60F26D052CF7105E007EF307 /* ZMAlignLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAlignLabel.h; sourceTree = "<group>"; };
+		60F26D062CF7105E007EF307 /* ZMAlignLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAlignLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60BAFCC52CB7878500B2EC54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD296438C1A5AADAD738DF7 /* Pods_imchat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		608F400C2CC8ABF800596F93 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				608F400D2CC8AC1100596F93 /* ZMNodesModel.h */,
+				608F400E2CC8AC1100596F93 /* ZMNodesModel.m */,
+				608F40152CC8DBE100596F93 /* ZMCreateSessionReqModel.h */,
+				608F40162CC8DBE100596F93 /* ZMCreateSessionReqModel.m */,
+				608F40192CC8DC0400596F93 /* ZMCreateSessionRepModel.h */,
+				608F401A2CC8DC0400596F93 /* ZMCreateSessionRepModel.m */,
+				608F401D2CC8E1C300596F93 /* ZMHistoryRepModel.h */,
+				608F401E2CC8E1C300596F93 /* ZMHistoryRepModel.m */,
+				608F40212CC8EE1E00596F93 /* ZMChatSendMsgReqModel.h */,
+				608F40222CC8EE1E00596F93 /* ZMChatSendMsgReqModel.m */,
+				608F40252CC8EE5800596F93 /* ZMChatSendMsgRepModel.h */,
+				608F40262CC8EE5800596F93 /* ZMChatSendMsgRepModel.m */,
+				60B584842CDB3B8700DE186C /* ZMInitUploadRespModel.h */,
+				60B584852CDB3B8700DE186C /* ZMInitUploadRespModel.m */,
+				60D499A82CDE1823000A8FAE /* ZMSingleUploadRespModel.h */,
+				60D499A92CDE1823000A8FAE /* ZMSingleUploadRespModel.m */,
+				60B5848E2CDC943800DE186C /* ZMCompleteUploadModel.h */,
+				60B5848F2CDC943800DE186C /* ZMCompleteUploadModel.m */,
+				60F26CF52CEDB073007EF307 /* ZMTimeoutConfigRespModel.h */,
+				60F26CF62CEDB073007EF307 /* ZMTimeoutConfigRespModel.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		608F7B5A2CC0EB0C003A2D50 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				608F7B5D2CC0EB44003A2D50 /* Views */,
+				608F7B5C2CC0EB3B003A2D50 /* Models */,
+				608F7B5B2CC0EB1B003A2D50 /* ViewController */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		608F7B5B2CC0EB1B003A2D50 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				608E2D2E2CB7BA14008F8CE1 /* ZMChatViewController.h */,
+				608E2D2F2CB7BA14008F8CE1 /* ZMChatViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		608F7B5C2CC0EB3B003A2D50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				608F400C2CC8ABF800596F93 /* Net */,
+				607554572CBFADD6008E989A /* ZMMessage.h */,
+				607554582CBFADD6008E989A /* ZMMessage.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		608F7B5D2CC0EB44003A2D50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				603675BB2D0002170059BA3E /* ZMFullScreenTextView.h */,
+				603675BD2D0002170059BA3E /* ZMFullScreenTextView.m */,
+				603675C02D0002170059BA3E /* ZMLikeButton.h */,
+				603675B62D0002170059BA3E /* ZMLikeButton.m */,
+				603675B72D0002170059BA3E /* ZMMediaGalleryView.h */,
+				603675C12D0002170059BA3E /* ZMMediaGalleryView.m */,
+				603675BF2D0002170059BA3E /* ZMMediaLoadingView.h */,
+				603675B82D0002170059BA3E /* ZMMediaLoadingView.m */,
+				603675B92D0002170059BA3E /* ZMPopMsgTipView.h */,
+				603675BE2D0002170059BA3E /* ZMPopMsgTipView.m */,
+				603675BA2D0002170059BA3E /* ZMTableHeaderView.h */,
+				603675BC2D0002170059BA3E /* ZMTableHeaderView.m */,
+				60F26CF12CED89DF007EF307 /* ZMFloatChatToolView.h */,
+				60F26CF22CED89DF007EF307 /* ZMFloatChatToolView.m */,
+				60E812C22CE5F19200674DA8 /* CircleProgressView.h */,
+				60E812C32CE5F19200674DA8 /* CircleProgressView.m */,
+				608F7B542CC0A9D9003A2D50 /* ZMChatInputToolbar.h */,
+				608F7B552CC0A9D9003A2D50 /* ZMChatInputToolbar.m */,
+				607554532CBFAC6F008E989A /* ZMMessageCell.h */,
+				607554542CBFAC6F008E989A /* ZMMessageCell.m */,
+				608F7B442CBFCBEC003A2D50 /* ZMTextMsgCell.h */,
+				608F7B452CBFCBEC003A2D50 /* ZMTextMsgCell.m */,
+				60F26D012CF413E3007EF307 /* ZMFAQBaseCell.h */,
+				60F26D022CF413E3007EF307 /* ZMFAQBaseCell.m */,
+				60F26CF92CF4118F007EF307 /* ZMFAQMsgCell.h */,
+				60F26CFA2CF4118F007EF307 /* ZMFAQMsgCell.m */,
+				608F7B502CBFCF27003A2D50 /* ZMFAQPointMsgCell.h */,
+				608F7B512CBFCF27003A2D50 /* ZMFAQPointMsgCell.m */,
+				60F26CFD2CF411BD007EF307 /* ZMFAQAnswerCell.h */,
+				60F26CFE2CF411BD007EF307 /* ZMFAQAnswerCell.m */,
+				608F7B5E2CC0EBD2003A2D50 /* ZMTimeMsgCell.h */,
+				608F7B5F2CC0EBD2003A2D50 /* ZMTimeMsgCell.m */,
+				6051478C2CC7A056004C4B7A /* ZMQueueCell.h */,
+				6051478D2CC7A056004C4B7A /* ZMQueueCell.m */,
+				605147902CC7A092004C4B7A /* ZMServicerStatusCell.h */,
+				605147912CC7A092004C4B7A /* ZMServicerStatusCell.m */,
+				608F7B622CC0EC6F003A2D50 /* ZMPicMsgCell.h */,
+				608F7B632CC0EC6F003A2D50 /* ZMPicMsgCell.m */,
+				608F7B662CC0EC9D003A2D50 /* ZMVideoMsgCell.h */,
+				608F7B672CC0EC9D003A2D50 /* ZMVideoMsgCell.m */,
+				605147B02CC7B12C004C4B7A /* ZMQuestionIsSolveCell.h */,
+				605147B12CC7B12C004C4B7A /* ZMQuestionIsSolveCell.m */,
+				608F7BAA2CC656CF003A2D50 /* ZMTextView.h */,
+				608F7BAB2CC656CF003A2D50 /* ZMTextView.m */,
+				608F7BAE2CC65989003A2D50 /* ZMChatToolBtn.h */,
+				608F7BAF2CC65989003A2D50 /* ZMChatToolBtn.m */,
+				605147882CC79071004C4B7A /* ZMVideoPlayerView.h */,
+				605147892CC79071004C4B7A /* ZMVideoPlayerView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		608F7B8E2CC21279003A2D50 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				608F7B8A2CC1F94F003A2D50 /* UIView+ZMAddon.h */,
+				608F7B8B2CC1F94F003A2D50 /* UIView+ZMAddon.m */,
+				60E616BC2CBCB24600C11C92 /* UIImageView+ZMAddon.h */,
+				60E616BD2CBCB24600C11C92 /* UIImageView+ZMAddon.m */,
+				608F7B6A2CC0EEB3003A2D50 /* UIImage+ZMAddon.h */,
+				608F7B6B2CC0EEB3003A2D50 /* UIImage+ZMAddon.m */,
+				608F7B862CC0FD37003A2D50 /* UIColor+ZMAddon.h */,
+				608F7B872CC0FD37003A2D50 /* UIColor+ZMAddon.m */,
+				608F7B902CC230D4003A2D50 /* NSNumber+ZMAddon.h */,
+				608F7B912CC230D4003A2D50 /* NSNumber+ZMAddon.m */,
+				605147A82CC7A45F004C4B7A /* UILabel+ZMAddon.h */,
+				605147A92CC7A45F004C4B7A /* UILabel+ZMAddon.m */,
+				60D3F29C2CCA3B6000178E1F /* NSDictionary+ZMAddon.h */,
+				60D3F29D2CCA3B6000178E1F /* NSDictionary+ZMAddon.m */,
+				60D3F2A02CCA3B6D00178E1F /* NSArray+ZMAddon.h */,
+				60D3F2A12CCA3B6D00178E1F /* NSArray+ZMAddon.m */,
+				60D3F2A42CCA3B7A00178E1F /* NSString+ZMAddon.h */,
+				60D3F2A52CCA3B7A00178E1F /* NSString+ZMAddon.m */,
+				60DB27B52CC7C7C500D36398 /* UITextView+ZMAddon.h */,
+				60DB27B62CC7C7C500D36398 /* UITextView+ZMAddon.m */,
+				608F40352CC907A100596F93 /* MsgEntityToServer+ZMAddon.h */,
+				608F40362CC907A100596F93 /* MsgEntityToServer+ZMAddon.m */,
+				608F40392CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.h */,
+				608F403A2CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		608F7B8F2CC21293003A2D50 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				608F7B7A2CC0F00F003A2D50 /* ZMBaseViewController.h */,
+				608F7B7B2CC0F00F003A2D50 /* ZMBaseViewController.m */,
+				608F7B7E2CC0F06B003A2D50 /* ZMModel.h */,
+				608F7B7F2CC0F06B003A2D50 /* ZMModel.m */,
+				608F7B822CC0F07B003A2D50 /* ZMView.h */,
+				608F7B832CC0F07B003A2D50 /* ZMView.m */,
+				605147AC2CC7A8A9004C4B7A /* ZMLabel.h */,
+				605147AD2CC7A8A9004C4B7A /* ZMLabel.m */,
+				608F40082CC8AA0300596F93 /* ZMResponseModel.h */,
+				608F40092CC8AA0300596F93 /* ZMResponseModel.m */,
+				60F26D052CF7105E007EF307 /* ZMAlignLabel.h */,
+				60F26D062CF7105E007EF307 /* ZMAlignLabel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		60BAFCBE2CB7878500B2EC54 = {
+			isa = PBXGroup;
+			children = (
+				60BAFCCA2CB7878500B2EC54 /* imchat */,
+				60BAFCC92CB7878500B2EC54 /* Products */,
+				92BC8C881FFEDC17E7BE7D33 /* Pods */,
+				B41E3A941F050870A8ABCA0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60BAFCC92CB7878500B2EC54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60BAFCC82CB7878500B2EC54 /* imchat.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60BAFCCA2CB7878500B2EC54 /* imchat */ = {
+			isa = PBXGroup;
+			children = (
+				60BAFCDA2CB7A7AE00B2EC54 /* Classes */,
+				60BAFCD42CB79ECA00B2EC54 /* Resource */,
+				60BAFCCC2CB7878500B2EC54 /* imchat.docc */,
+			);
+			path = imchat;
+			sourceTree = "<group>";
+		};
+		60BAFCD42CB79ECA00B2EC54 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				608F7B992CC23E0C003A2D50 /* zh-Hans.strings */,
+				605F4D502CBE4FA6000308B3 /* en.strings */,
+				608F7BA02CC24DAF003A2D50 /* asset.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		60BAFCD52CB79ED900B2EC54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60BAFCD62CB79EE100B2EC54 /* Proto */ = {
+			isa = PBXGroup;
+			children = (
+				608F40112CC8C17800596F93 /* Msggateway.pbobjc.h */,
+				608F40122CC8C17800596F93 /* Msggateway.pbobjc.m */,
+			);
+			path = Proto;
+			sourceTree = "<group>";
+		};
+		60BAFCD72CB79EE900B2EC54 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				608F7B8F2CC21293003A2D50 /* Base */,
+				608F7B8E2CC21279003A2D50 /* Category */,
+				608E2D3A2CB8D968008F8CE1 /* Constant.h */,
+				608F7B582CC0B7A6003A2D50 /* Header.h */,
+				608F7BA62CC64DCA003A2D50 /* ZMCommon.h */,
+				608F7BA72CC64DCA003A2D50 /* ZMCommon.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		60BAFCD82CB79EF800B2EC54 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				603675CE2D0002630059BA3E /* ZMMessageManager.h */,
+				603675CF2D0002630059BA3E /* ZMMessageManager.m */,
+				60B5847C2CDA1DAE00DE186C /* ZMUploadManager.h */,
+				60B5847D2CDA1DAE00DE186C /* ZMUploadManager.m */,
+				60B5848A2CDB647B00DE186C /* ZMCacheManager.h */,
+				60B5848B2CDB647B00DE186C /* ZMCacheManager.m */,
+				60B584802CDB1AAC00DE186C /* ZMUploadQueueTask.h */,
+				60B584812CDB1AAC00DE186C /* ZMUploadQueueTask.m */,
+				60D6D2812CCF436000F03565 /* ZMVideoThumbnailManager.h */,
+				60D6D2822CCF436000F03565 /* ZMVideoThumbnailManager.m */,
+				607554502CBF9E13008E989A /* ZMNodeManager.h */,
+				6075544F2CBF9E13008E989A /* ZMNodeManager.m */,
+				6075544C2CBF70E9008E989A /* ZMNetworkManager.h */,
+				6075544B2CBF70E9008E989A /* ZMNetworkManager.m */,
+				608E2D362CB7EA02008F8CE1 /* ZMWebSocketManager.h */,
+				608E2D372CB7EA02008F8CE1 /* ZMWebSocketManager.m */,
+				605F4D342CBD2547000308B3 /* ZMDatabaseManager.h */,
+				605F4D352CBD2547000308B3 /* ZMDatabaseManager.m */,
+				605F4D382CBE0C97000308B3 /* ZMLanguageManager.h */,
+				605F4D392CBE0C97000308B3 /* ZMLanguageManager.m */,
+				605F4D3C2CBE0DB1000308B3 /* ZMHttpHelper.h */,
+				605F4D3D2CBE0DB1000308B3 /* ZMHttpHelper.m */,
+				608F7B6E2CC0EF5E003A2D50 /* ZMImageRes.h */,
+				608F7B6F2CC0EF5E003A2D50 /* ZMImageRes.m */,
+				608F7B722CC0EF6E003A2D50 /* ZMColorRes.h */,
+				608F7B732CC0EF6E003A2D50 /* ZMColorRes.m */,
+				608F7B762CC0EF82003A2D50 /* ZMFontRes.h */,
+				608F7B772CC0EF82003A2D50 /* ZMFontRes.m */,
+				608F7B942CC23BF5003A2D50 /* ZMStrRes.h */,
+				608F7B952CC23BF5003A2D50 /* ZMStrRes.m */,
+				608F7BA22CC5ECF4003A2D50 /* ZMStyleRes.h */,
+				608F7BA32CC5ECF4003A2D50 /* ZMStyleRes.m */,
+				608F40042CC8A0E700596F93 /* ZMApis.h */,
+				608F40052CC8A0E700596F93 /* ZMApis.m */,
+				60DE43F12CE05114001B2BB1 /* ZMAESCryptor.h */,
+				60DE43F22CE05114001B2BB1 /* ZMAESCryptor.m */,
+				60DA07C12CE74C8600D19122 /* IMSDK.h */,
+				60DA07C22CE74C8600D19122 /* IMSDK.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		60BAFCD92CB79F0600B2EC54 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				608F7B5A2CC0EB0C003A2D50 /* Chat */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		60BAFCDA2CB7A7AE00B2EC54 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				60BAFCD92CB79F0600B2EC54 /* Pages */,
+				60BAFCD82CB79EF800B2EC54 /* Utils */,
+				60BAFCD72CB79EE900B2EC54 /* Common */,
+				60BAFCD62CB79EE100B2EC54 /* Proto */,
+				60BAFCD52CB79ED900B2EC54 /* Model */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		92BC8C881FFEDC17E7BE7D33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				298DB90B6B490DC198D2E7CE /* Pods-imchat.debug.xcconfig */,
+				16D403D0DBD13C31F05357F8 /* Pods-imchat.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		B41E3A941F050870A8ABCA0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60B584882CDB450800DE186C /* Photos.framework */,
+				052A1CDC4DFD9DF521F1CF20 /* Pods_imchat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60BAFCC32CB7878500B2EC54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				603675C32D0002170059BA3E /* ZMMediaGalleryView.h in Headers */,
+				60D499AA2CDE1823000A8FAE /* ZMSingleUploadRespModel.h in Headers */,
+				60D6D2832CCF436000F03565 /* ZMVideoThumbnailManager.h in Headers */,
+				60F26CFB2CF4118F007EF307 /* ZMFAQMsgCell.h in Headers */,
+				608F40132CC8C17800596F93 /* Msggateway.pbobjc.h in Headers */,
+				608F7B562CC0A9DA003A2D50 /* ZMChatInputToolbar.h in Headers */,
+				60D3F29E2CCA3B6000178E1F /* NSDictionary+ZMAddon.h in Headers */,
+				60F26D072CF7105E007EF307 /* ZMAlignLabel.h in Headers */,
+				608F40232CC8EE1E00596F93 /* ZMChatSendMsgReqModel.h in Headers */,
+				608F7B7C2CC0F00F003A2D50 /* ZMBaseViewController.h in Headers */,
+				603675C62D0002170059BA3E /* ZMTableHeaderView.h in Headers */,
+				60D3F2A22CCA3B6D00178E1F /* NSArray+ZMAddon.h in Headers */,
+				608F7B6C2CC0EEB3003A2D50 /* UIImage+ZMAddon.h in Headers */,
+				608F7BA42CC5ECF4003A2D50 /* ZMStyleRes.h in Headers */,
+				608F7BA82CC64DCA003A2D50 /* ZMCommon.h in Headers */,
+				60DA07C32CE74C8600D19122 /* IMSDK.h in Headers */,
+				603675C52D0002170059BA3E /* ZMPopMsgTipView.h in Headers */,
+				60B5847E2CDA1DAE00DE186C /* ZMUploadManager.h in Headers */,
+				60B584822CDB1AAC00DE186C /* ZMUploadQueueTask.h in Headers */,
+				608E2D302CB7BA14008F8CE1 /* ZMChatViewController.h in Headers */,
+				605F4D3E2CBE0DB1000308B3 /* ZMHttpHelper.h in Headers */,
+				608F40372CC907A100596F93 /* MsgEntityToServer+ZMAddon.h in Headers */,
+				608F400F2CC8AC1100596F93 /* ZMNodesModel.h in Headers */,
+				608F7BAC2CC656CF003A2D50 /* ZMTextView.h in Headers */,
+				60F26CF72CEDB073007EF307 /* ZMTimeoutConfigRespModel.h in Headers */,
+				605147AE2CC7A8A9004C4B7A /* ZMLabel.h in Headers */,
+				608F7B8C2CC1F94F003A2D50 /* UIView+ZMAddon.h in Headers */,
+				605F4D362CBD2547000308B3 /* ZMDatabaseManager.h in Headers */,
+				608F7B642CC0EC6F003A2D50 /* ZMPicMsgCell.h in Headers */,
+				6051478A2CC79071004C4B7A /* ZMVideoPlayerView.h in Headers */,
+				60B5848C2CDB647B00DE186C /* ZMCacheManager.h in Headers */,
+				608F7B962CC23BF5003A2D50 /* ZMStrRes.h in Headers */,
+				608F7B462CBFCBEC003A2D50 /* ZMTextMsgCell.h in Headers */,
+				608F40062CC8A0E700596F93 /* ZMApis.h in Headers */,
+				605147922CC7A092004C4B7A /* ZMServicerStatusCell.h in Headers */,
+				608F401F2CC8E1C300596F93 /* ZMHistoryRepModel.h in Headers */,
+				60DB27B72CC7C7C500D36398 /* UITextView+ZMAddon.h in Headers */,
+				608E2D3B2CB8D968008F8CE1 /* Constant.h in Headers */,
+				607554592CBFADD6008E989A /* ZMMessage.h in Headers */,
+				60F26CFF2CF411BD007EF307 /* ZMFAQAnswerCell.h in Headers */,
+				608F7B592CC0B7A6003A2D50 /* Header.h in Headers */,
+				608F40272CC8EE5800596F93 /* ZMChatSendMsgRepModel.h in Headers */,
+				608F40172CC8DBE100596F93 /* ZMCreateSessionReqModel.h in Headers */,
+				603675D02D0002630059BA3E /* ZMMessageManager.h in Headers */,
+				60B584862CDB3B8700DE186C /* ZMInitUploadRespModel.h in Headers */,
+				608F7B802CC0F06B003A2D50 /* ZMModel.h in Headers */,
+				608F7B882CC0FD37003A2D50 /* UIColor+ZMAddon.h in Headers */,
+				605147B22CC7B12C004C4B7A /* ZMQuestionIsSolveCell.h in Headers */,
+				6051478E2CC7A056004C4B7A /* ZMQueueCell.h in Headers */,
+				608F400A2CC8AA0300596F93 /* ZMResponseModel.h in Headers */,
+				603675C72D0002170059BA3E /* ZMFullScreenTextView.h in Headers */,
+				60B584902CDC943800DE186C /* ZMCompleteUploadModel.h in Headers */,
+				605147AA2CC7A45F004C4B7A /* UILabel+ZMAddon.h in Headers */,
+				608F7B742CC0EF6E003A2D50 /* ZMColorRes.h in Headers */,
+				608F403B2CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.h in Headers */,
+				603675CC2D0002170059BA3E /* ZMLikeButton.h in Headers */,
+				60E812C42CE5F19200674DA8 /* CircleProgressView.h in Headers */,
+				60F26D032CF413E3007EF307 /* ZMFAQBaseCell.h in Headers */,
+				607554522CBF9E13008E989A /* ZMNodeManager.h in Headers */,
+				603675CB2D0002170059BA3E /* ZMMediaLoadingView.h in Headers */,
+				608F7B842CC0F07B003A2D50 /* ZMView.h in Headers */,
+				60E616BE2CBCB24600C11C92 /* UIImageView+ZMAddon.h in Headers */,
+				608F7B682CC0EC9D003A2D50 /* ZMVideoMsgCell.h in Headers */,
+				608F7BB02CC65989003A2D50 /* ZMChatToolBtn.h in Headers */,
+				608F7B782CC0EF82003A2D50 /* ZMFontRes.h in Headers */,
+				608F7B522CBFCF27003A2D50 /* ZMFAQPointMsgCell.h in Headers */,
+				608F7B602CC0EBD2003A2D50 /* ZMTimeMsgCell.h in Headers */,
+				60DE43F32CE05114001B2BB1 /* ZMAESCryptor.h in Headers */,
+				608F7B702CC0EF5E003A2D50 /* ZMImageRes.h in Headers */,
+				608F401B2CC8DC0400596F93 /* ZMCreateSessionRepModel.h in Headers */,
+				60F26CF32CED89DF007EF307 /* ZMFloatChatToolView.h in Headers */,
+				60D3F2A62CCA3B7A00178E1F /* NSString+ZMAddon.h in Headers */,
+				607554552CBFAC6F008E989A /* ZMMessageCell.h in Headers */,
+				605F4D3A2CBE0C97000308B3 /* ZMLanguageManager.h in Headers */,
+				608F7B922CC230D4003A2D50 /* NSNumber+ZMAddon.h in Headers */,
+				608E2D382CB7EA02008F8CE1 /* ZMWebSocketManager.h in Headers */,
+				6075544E2CBF70E9008E989A /* ZMNetworkManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		60BAFCC72CB7878500B2EC54 /* imchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60BAFCD12CB7878500B2EC54 /* Build configuration list for PBXNativeTarget "imchat" */;
+			buildPhases = (
+				6F4F9BE0DAA3735202FD932E /* [CP] Check Pods Manifest.lock */,
+				60BAFCC32CB7878500B2EC54 /* Headers */,
+				60BAFCC42CB7878500B2EC54 /* Sources */,
+				60BAFCC52CB7878500B2EC54 /* Frameworks */,
+				60BAFCC62CB7878500B2EC54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imchat;
+			productName = imchat;
+			productReference = 60BAFCC82CB7878500B2EC54 /* imchat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60BAFCBF2CB7878500B2EC54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					60BAFCC72CB7878500B2EC54 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 60BAFCC22CB7878500B2EC54 /* Build configuration list for PBXProject "imchat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60BAFCBE2CB7878500B2EC54;
+			productRefGroup = 60BAFCBE2CB7878500B2EC54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60BAFCC72CB7878500B2EC54 /* imchat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60BAFCC62CB7878500B2EC54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608F7B9A2CC23E0C003A2D50 /* zh-Hans.strings in Resources */,
+				605F4D512CBE4FA6000308B3 /* en.strings in Resources */,
+				608F7BA12CC24DAF003A2D50 /* asset.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F4F9BE0DAA3735202FD932E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-imchat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60BAFCC42CB7878500B2EC54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608F7B692CC0EC9D003A2D50 /* ZMVideoMsgCell.m in Sources */,
+				608F400B2CC8AA0300596F93 /* ZMResponseModel.m in Sources */,
+				607554512CBF9E13008E989A /* ZMNodeManager.m in Sources */,
+				60D3F2A32CCA3B6D00178E1F /* NSArray+ZMAddon.m in Sources */,
+				6075544D2CBF70E9008E989A /* ZMNetworkManager.m in Sources */,
+				608F7B712CC0EF5E003A2D50 /* ZMImageRes.m in Sources */,
+				608F403C2CC9086200596F93 /* MsgEntityToFrontEnd+ZMAddon.m in Sources */,
+				608F40242CC8EE1E00596F93 /* ZMChatSendMsgReqModel.m in Sources */,
+				6051478F2CC7A056004C4B7A /* ZMQueueCell.m in Sources */,
+				60D3F2A72CCA3B7A00178E1F /* NSString+ZMAddon.m in Sources */,
+				60D6D2842CCF436000F03565 /* ZMVideoThumbnailManager.m in Sources */,
+				6075545A2CBFADD6008E989A /* ZMMessage.m in Sources */,
+				605147AB2CC7A45F004C4B7A /* UILabel+ZMAddon.m in Sources */,
+				60DB27B82CC7C7C500D36398 /* UITextView+ZMAddon.m in Sources */,
+				60E616BF2CBCB24600C11C92 /* UIImageView+ZMAddon.m in Sources */,
+				608F7B8D2CC1F94F003A2D50 /* UIView+ZMAddon.m in Sources */,
+				608E2D392CB7EA02008F8CE1 /* ZMWebSocketManager.m in Sources */,
+				60F26CFC2CF4118F007EF307 /* ZMFAQMsgCell.m in Sources */,
+				608F7B792CC0EF82003A2D50 /* ZMFontRes.m in Sources */,
+				608F40382CC907A100596F93 /* MsgEntityToServer+ZMAddon.m in Sources */,
+				60D499AB2CDE1823000A8FAE /* ZMSingleUploadRespModel.m in Sources */,
+				60D3F29F2CCA3B6000178E1F /* NSDictionary+ZMAddon.m in Sources */,
+				608F40182CC8DBE100596F93 /* ZMCreateSessionReqModel.m in Sources */,
+				608F40102CC8AC1100596F93 /* ZMNodesModel.m in Sources */,
+				60B584912CDC943800DE186C /* ZMCompleteUploadModel.m in Sources */,
+				608F7BA92CC64DCA003A2D50 /* ZMCommon.m in Sources */,
+				608E2D312CB7BA14008F8CE1 /* ZMChatViewController.m in Sources */,
+				603675C42D0002170059BA3E /* ZMMediaLoadingView.m in Sources */,
+				603675D12D0002630059BA3E /* ZMMessageManager.m in Sources */,
+				60F26D082CF7105E007EF307 /* ZMAlignLabel.m in Sources */,
+				608F40142CC8C17800596F93 /* Msggateway.pbobjc.m in Sources */,
+				608F7B812CC0F06B003A2D50 /* ZMModel.m in Sources */,
+				608F7B892CC0FD37003A2D50 /* UIColor+ZMAddon.m in Sources */,
+				608F7B572CC0A9DA003A2D50 /* ZMChatInputToolbar.m in Sources */,
+				605147B32CC7B12C004C4B7A /* ZMQuestionIsSolveCell.m in Sources */,
+				60B584872CDB3B8700DE186C /* ZMInitUploadRespModel.m in Sources */,
+				60DE43F42CE05114001B2BB1 /* ZMAESCryptor.m in Sources */,
+				605147932CC7A092004C4B7A /* ZMServicerStatusCell.m in Sources */,
+				60BAFCCD2CB7878500B2EC54 /* imchat.docc in Sources */,
+				60DA07C42CE74C8600D19122 /* IMSDK.m in Sources */,
+				60F26CF42CED89DF007EF307 /* ZMFloatChatToolView.m in Sources */,
+				608F7B7D2CC0F00F003A2D50 /* ZMBaseViewController.m in Sources */,
+				605F4D372CBD2547000308B3 /* ZMDatabaseManager.m in Sources */,
+				608F7B6D2CC0EEB3003A2D50 /* UIImage+ZMAddon.m in Sources */,
+				603675C22D0002170059BA3E /* ZMLikeButton.m in Sources */,
+				605147AF2CC7A8A9004C4B7A /* ZMLabel.m in Sources */,
+				608F7B752CC0EF6E003A2D50 /* ZMColorRes.m in Sources */,
+				608F40072CC8A0E700596F93 /* ZMApis.m in Sources */,
+				6051478B2CC79071004C4B7A /* ZMVideoPlayerView.m in Sources */,
+				608F7BB12CC65989003A2D50 /* ZMChatToolBtn.m in Sources */,
+				608F7BA52CC5ECF4003A2D50 /* ZMStyleRes.m in Sources */,
+				607554562CBFAC6F008E989A /* ZMMessageCell.m in Sources */,
+				60F26D042CF413E3007EF307 /* ZMFAQBaseCell.m in Sources */,
+				60B5847F2CDA1DAE00DE186C /* ZMUploadManager.m in Sources */,
+				60B584832CDB1AAC00DE186C /* ZMUploadQueueTask.m in Sources */,
+				608F7B852CC0F07B003A2D50 /* ZMView.m in Sources */,
+				608F7B612CC0EBD2003A2D50 /* ZMTimeMsgCell.m in Sources */,
+				605F4D3B2CBE0C97000308B3 /* ZMLanguageManager.m in Sources */,
+				608F401C2CC8DC0400596F93 /* ZMCreateSessionRepModel.m in Sources */,
+				608F7B972CC23BF5003A2D50 /* ZMStrRes.m in Sources */,
+				60B5848D2CDB647B00DE186C /* ZMCacheManager.m in Sources */,
+				603675CA2D0002170059BA3E /* ZMPopMsgTipView.m in Sources */,
+				608F7B472CBFCBEC003A2D50 /* ZMTextMsgCell.m in Sources */,
+				603675C82D0002170059BA3E /* ZMTableHeaderView.m in Sources */,
+				605F4D3F2CBE0DB1000308B3 /* ZMHttpHelper.m in Sources */,
+				608F7B932CC230D4003A2D50 /* NSNumber+ZMAddon.m in Sources */,
+				608F40202CC8E1C300596F93 /* ZMHistoryRepModel.m in Sources */,
+				608F7B532CBFCF27003A2D50 /* ZMFAQPointMsgCell.m in Sources */,
+				60E812C52CE5F19200674DA8 /* CircleProgressView.m in Sources */,
+				603675CD2D0002170059BA3E /* ZMMediaGalleryView.m in Sources */,
+				60F26CF82CEDB073007EF307 /* ZMTimeoutConfigRespModel.m in Sources */,
+				603675C92D0002170059BA3E /* ZMFullScreenTextView.m in Sources */,
+				608F7B652CC0EC6F003A2D50 /* ZMPicMsgCell.m in Sources */,
+				608F7BAD2CC656CF003A2D50 /* ZMTextView.m in Sources */,
+				608F40282CC8EE5800596F93 /* ZMChatSendMsgRepModel.m in Sources */,
+				60F26D002CF411BD007EF307 /* ZMFAQAnswerCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		60BAFCCF2CB7878500B2EC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60BAFCD02CB7878500B2EC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60BAFCD22CB7878500B2EC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298DB90B6B490DC198D2E7CE /* Pods-imchat.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Classes/Common/Header.h";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/Protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket/SocketRocket.framework/Headers\"",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zm.imchat;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60BAFCD32CB7878500B2EC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D403D0DBD13C31F05357F8 /* Pods-imchat.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Classes/Common/Header.h";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/Protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket/SocketRocket.framework/Headers\"",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zm.imchat;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60BAFCC22CB7878500B2EC54 /* Build configuration list for PBXProject "imchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60BAFCCF2CB7878500B2EC54 /* Debug */,
+				60BAFCD02CB7878500B2EC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60BAFCD12CB7878500B2EC54 /* Build configuration list for PBXNativeTarget "imchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60BAFCD22CB7878500B2EC54 /* Debug */,
+				60BAFCD32CB7878500B2EC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60BAFCBF2CB7878500B2EC54 /* Project object */;
+}

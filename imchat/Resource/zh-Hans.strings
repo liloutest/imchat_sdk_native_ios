@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  imchat
+
+  Created by Lilou on 2024/10/15.
+  
+*/
+"like" = "有用";
+"unLike" = "没用";
