@@ -36,10 +36,12 @@
     // open vc
     UINavigationController *nav = [controller navigationController];
     if(!nav){
-        nav = [[UINavigationController alloc] initWithRootViewController:controller];
+        nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        [controller presentViewController:nav animated:YES completion:nil];
     }
-    
-    [nav pushViewController:vc animated:YES];
+    else{
+        [nav pushViewController:vc animated:YES];
+    }
     return YES;
 }
 @end
