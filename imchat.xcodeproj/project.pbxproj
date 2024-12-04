@@ -25,6 +25,7 @@
 		603675D52D0007C30059BA3E /* Msggateway.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 603675D22D0007C20059BA3E /* Msggateway.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		603675D62D0007C30059BA3E /* Msggateway.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675D32D0007C20059BA3E /* Msggateway.pbobjc.h */; };
 		603675D72D0007C30059BA3E /* msggateway.proto in Sources */ = {isa = PBXBuildFile; fileRef = 603675D42D0007C30059BA3E /* msggateway.proto */; };
+		603675D92D0023CA0059BA3E /* PrefixHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 603675D82D0023CA0059BA3E /* PrefixHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6051478A2CC79071004C4B7A /* ZMVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 605147882CC79071004C4B7A /* ZMVideoPlayerView.h */; };
 		6051478B2CC79071004C4B7A /* ZMVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 605147892CC79071004C4B7A /* ZMVideoPlayerView.m */; };
 		6051478E2CC7A056004C4B7A /* ZMQueueCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6051478C2CC7A056004C4B7A /* ZMQueueCell.h */; };
@@ -188,6 +189,7 @@
 		603675D22D0007C20059BA3E /* Msggateway.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Msggateway.pbobjc.m; sourceTree = "<group>"; };
 		603675D32D0007C20059BA3E /* Msggateway.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Msggateway.pbobjc.h; sourceTree = "<group>"; };
 		603675D42D0007C30059BA3E /* msggateway.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = msggateway.proto; sourceTree = "<group>"; };
+		603675D82D0023CA0059BA3E /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 		605147882CC79071004C4B7A /* ZMVideoPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMVideoPlayerView.h; sourceTree = "<group>"; };
 		605147892CC79071004C4B7A /* ZMVideoPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMVideoPlayerView.m; sourceTree = "<group>"; };
 		6051478C2CC7A056004C4B7A /* ZMQueueCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQueueCell.h; sourceTree = "<group>"; };
@@ -567,6 +569,7 @@
 				608F7B8E2CC21279003A2D50 /* Category */,
 				608E2D3A2CB8D968008F8CE1 /* Constant.h */,
 				608F7B582CC0B7A6003A2D50 /* Header.h */,
+				603675D82D0023CA0059BA3E /* PrefixHeader.h */,
 				608F7BA62CC64DCA003A2D50 /* ZMCommon.h */,
 				608F7BA72CC64DCA003A2D50 /* ZMCommon.m */,
 			);
@@ -665,6 +668,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				603675C32D0002170059BA3E /* ZMMediaGalleryView.h in Headers */,
+				603675D92D0023CA0059BA3E /* PrefixHeader.h in Headers */,
 				60D499AA2CDE1823000A8FAE /* ZMSingleUploadRespModel.h in Headers */,
 				60D6D2832CCF436000F03565 /* ZMVideoThumbnailManager.h in Headers */,
 				60F26CFB2CF4118F007EF307 /* ZMFAQMsgCell.h in Headers */,
