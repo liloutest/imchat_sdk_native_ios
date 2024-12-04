@@ -107,7 +107,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.static_framework = true
+  #spec.static_framework = true
   #spec.exclude_files = "Classes/Exclude"
   #spec.source_files = 'imchat/Classes/Proto/Msggateway.pbobjc.m'
   #spec.compiler_flags = '-fno-objc-arc'
