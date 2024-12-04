@@ -112,6 +112,6 @@ typedef NS_ENUM(NSInteger,IMLangType) {
     
 };
 
-#define kZMENV 1
+#define kZMENV 0
 
 #endif /* Constant_h */

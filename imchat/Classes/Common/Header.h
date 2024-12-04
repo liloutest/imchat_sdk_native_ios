@@ -40,4 +40,5 @@
 #import "ZMDatabaseManager.h"
 #import "ZMFAQBaseCell.h"
 #import "ZMChatViewController.h"
+#import "IMSDK.h"
 #endif /* Header_h */
