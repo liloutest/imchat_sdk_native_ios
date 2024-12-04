@@ -15,7 +15,7 @@
 #import "ZMImageRes.h"
 #import "ZMColorRes.h"
 #import "ZMFontRes.h"
-#import <Masonry.h>
+#import "Masonry/Masonry.h"
 #import "UIImage+ZMAddon.h"
 #import "ZMStyleRes.h"
 #import "UIView+ZMAddon.h"
