@@ -32,8 +32,8 @@
 #import "MsgEntityToServer+ZMAddon.h"
 #import "ZMMessage.h"
 #import "ZMVideoThumbnailManager.h"
-#import "SVProgressHUD.h"
-#import "LKDBHelper.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <LKDBHelper/LKDBHelper.h>
 #import "ZMUploadQueueTask.h"
 #import "ZMCacheManager.h"
 #import "ZMUploadManager.h"

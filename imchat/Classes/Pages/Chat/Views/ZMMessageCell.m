@@ -6,7 +6,7 @@
 //
 
 #import "ZMMessageCell.h"
-#import <Masonry.h>
+#import "Masonry.h"
 #import "UIImageView+ZMAddon.h"
 #import "ZMColorRes.h"
 #import "ZMFontRes.h"

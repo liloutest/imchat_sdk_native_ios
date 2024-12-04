@@ -7,7 +7,7 @@
 
 #import "ZMWebSocketManager.h"
 #import <SocketRocket/SocketRocket.h>
-#import <AFNetworkReachabilityManager.h>
+#import "AFNetworking/AFNetworkReachabilityManager.h"
 #import "Constant.h"
 #import "Msggateway.pbobjc.h"
 //#import <AFNetworkActivityIndicatorManager.h>

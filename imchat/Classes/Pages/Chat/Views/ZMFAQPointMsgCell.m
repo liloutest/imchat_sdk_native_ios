@@ -6,7 +6,7 @@
 //
 
 #import "ZMFAQPointMsgCell.h"
-#import <Masonry.h>
+#import "Masonry.h"
 #import <TTTAttributedLabel/TTTAttributedLabel.h>
 #import "ZMLikeButton.h"
 

@@ -6,7 +6,7 @@
 //
 
 #import "ZMFAQMsgCell.h"
-#import <Masonry.h>
+#import "Masonry.h"
 #import <TTTAttributedLabel/TTTAttributedLabel.h>
 #import "ZMLikeButton.h"
 #define kZMFAQQuestionBtnTagIndex 100

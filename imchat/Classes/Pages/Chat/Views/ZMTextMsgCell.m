@@ -6,7 +6,7 @@
 //
 
 #import "ZMTextMsgCell.h"
-#import <Masonry.h>
+#import "Masonry.h"
 #import "ZMColorRes.h"
 
 @interface ZMTextMsgCell ()

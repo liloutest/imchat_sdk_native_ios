@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constant.h"
 typedef  void (^IMInitSuccessBlock)(void);
 typedef  void (^IMInitFailBlock)(NSError * _Nullable error);
 NS_ASSUME_NONNULL_BEGIN
