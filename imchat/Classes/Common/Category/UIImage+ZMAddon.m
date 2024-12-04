@@ -10,7 +10,10 @@
 @implementation UIImage (ZMAddon)
 + (UIImage *)zm_imageWithName:(NSString *)name
 {
-    return  [UIImage imageNamed:name inBundle:[NSBundle bundleWithIdentifier:@"com.zm.imchat"] compatibleWithTraitCollection:nil];
+    NSString *bundlePath = [[NSBundle bundleForClass:[ZMApis class]] pathForResource:@"imchat" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    UIImage *img = [UIImage imageNamed:name inBundle:bundle compatibleWithTraitCollection:nil];
+    return img;
 }
 
 + (UIImage *)compressImageToSize:(UIImage *)image {

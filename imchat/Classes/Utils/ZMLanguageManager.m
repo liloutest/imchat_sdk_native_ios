@@ -109,10 +109,13 @@
     NSDictionary *languagePack = [NSDictionary dictionaryWithContentsOfFile:path];
     
     if (!languagePack) {
+        NSString *bundlePath = [[NSBundle bundleForClass:[ZMApis class]] pathForResource:@"imchat" ofType:@"bundle"];
+        NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+  
         // If no API-set language pack, try to read the system default language file
-        NSBundle *bid = [NSBundle bundleWithIdentifier:@"com.zm.imchat"];
+//        NSBundle *bid = [NSBundle bundleWithIdentifier:@"com.zm.imchat"];
 //        NSURL *url = [bid URLForResource:@"Lang" withExtension:@"bundle"];
-        NSString *defaultPath = [bid pathForResource:@"en" ofType:@"strings"];
+        NSString *defaultPath = [bundle pathForResource:@"en" ofType:@"strings"];
 //        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:defaultPath];
 //        NSBundle *mBid = [NSBundle bundleWithURL:url];
 //        NSString *langBundlePath = [bid pathForResource:url.absoluteString ofType:@"bundle"];

@@ -44,7 +44,6 @@
 		605F4D3B2CBE0C97000308B3 /* ZMLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 605F4D392CBE0C97000308B3 /* ZMLanguageManager.m */; };
 		605F4D3E2CBE0DB1000308B3 /* ZMHttpHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 605F4D3C2CBE0DB1000308B3 /* ZMHttpHelper.h */; };
 		605F4D3F2CBE0DB1000308B3 /* ZMHttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 605F4D3D2CBE0DB1000308B3 /* ZMHttpHelper.m */; };
-		605F4D512CBE4FA6000308B3 /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = 605F4D502CBE4FA6000308B3 /* en.strings */; };
 		6075544D2CBF70E9008E989A /* ZMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6075544B2CBF70E9008E989A /* ZMNetworkManager.m */; };
 		6075544E2CBF70E9008E989A /* ZMNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6075544C2CBF70E9008E989A /* ZMNetworkManager.h */; };
 		607554512CBF9E13008E989A /* ZMNodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6075544F2CBF9E13008E989A /* ZMNodeManager.m */; };
@@ -113,8 +112,6 @@
 		608F7B932CC230D4003A2D50 /* NSNumber+ZMAddon.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B912CC230D4003A2D50 /* NSNumber+ZMAddon.m */; };
 		608F7B962CC23BF5003A2D50 /* ZMStrRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7B942CC23BF5003A2D50 /* ZMStrRes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		608F7B972CC23BF5003A2D50 /* ZMStrRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7B952CC23BF5003A2D50 /* ZMStrRes.m */; };
-		608F7B9A2CC23E0C003A2D50 /* zh-Hans.strings in Resources */ = {isa = PBXBuildFile; fileRef = 608F7B992CC23E0C003A2D50 /* zh-Hans.strings */; };
-		608F7BA12CC24DAF003A2D50 /* asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608F7BA02CC24DAF003A2D50 /* asset.xcassets */; };
 		608F7BA42CC5ECF4003A2D50 /* ZMStyleRes.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7BA22CC5ECF4003A2D50 /* ZMStyleRes.h */; };
 		608F7BA52CC5ECF4003A2D50 /* ZMStyleRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7BA32CC5ECF4003A2D50 /* ZMStyleRes.m */; };
 		608F7BA82CC64DCA003A2D50 /* ZMCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7BA62CC64DCA003A2D50 /* ZMCommon.h */; };
@@ -166,6 +163,7 @@
 		60F26D042CF413E3007EF307 /* ZMFAQBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F26D022CF413E3007EF307 /* ZMFAQBaseCell.m */; };
 		60F26D072CF7105E007EF307 /* ZMAlignLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F26D052CF7105E007EF307 /* ZMAlignLabel.h */; };
 		60F26D082CF7105E007EF307 /* ZMAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F26D062CF7105E007EF307 /* ZMAlignLabel.m */; };
+		60FEC2002D00522400E191E0 /* imchat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 60FEC1FF2D00522400E191E0 /* imchat.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -208,7 +206,6 @@
 		605F4D392CBE0C97000308B3 /* ZMLanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMLanguageManager.m; sourceTree = "<group>"; };
 		605F4D3C2CBE0DB1000308B3 /* ZMHttpHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMHttpHelper.h; sourceTree = "<group>"; };
 		605F4D3D2CBE0DB1000308B3 /* ZMHttpHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMHttpHelper.m; sourceTree = "<group>"; };
-		605F4D502CBE4FA6000308B3 /* en.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = en.strings; sourceTree = "<group>"; };
 		6075544B2CBF70E9008E989A /* ZMNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMNetworkManager.m; sourceTree = "<group>"; };
 		6075544C2CBF70E9008E989A /* ZMNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMNetworkManager.h; sourceTree = "<group>"; };
 		6075544F2CBF9E13008E989A /* ZMNodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMNodeManager.m; sourceTree = "<group>"; };
@@ -277,8 +274,6 @@
 		608F7B912CC230D4003A2D50 /* NSNumber+ZMAddon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ZMAddon.m"; sourceTree = "<group>"; };
 		608F7B942CC23BF5003A2D50 /* ZMStrRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMStrRes.h; sourceTree = "<group>"; };
 		608F7B952CC23BF5003A2D50 /* ZMStrRes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMStrRes.m; sourceTree = "<group>"; };
-		608F7B992CC23E0C003A2D50 /* zh-Hans.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "zh-Hans.strings"; sourceTree = "<group>"; };
-		608F7BA02CC24DAF003A2D50 /* asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = asset.xcassets; sourceTree = "<group>"; };
 		608F7BA22CC5ECF4003A2D50 /* ZMStyleRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMStyleRes.h; sourceTree = "<group>"; };
 		608F7BA32CC5ECF4003A2D50 /* ZMStyleRes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMStyleRes.m; sourceTree = "<group>"; };
 		608F7BA62CC64DCA003A2D50 /* ZMCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMCommon.h; sourceTree = "<group>"; };
@@ -332,6 +327,7 @@
 		60F26D022CF413E3007EF307 /* ZMFAQBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFAQBaseCell.m; sourceTree = "<group>"; };
 		60F26D052CF7105E007EF307 /* ZMAlignLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAlignLabel.h; sourceTree = "<group>"; };
 		60F26D062CF7105E007EF307 /* ZMAlignLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAlignLabel.m; sourceTree = "<group>"; };
+		60FEC1FF2D00522400E191E0 /* imchat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = imchat.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -538,9 +534,7 @@
 		60BAFCD42CB79ECA00B2EC54 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				608F7B992CC23E0C003A2D50 /* zh-Hans.strings */,
-				605F4D502CBE4FA6000308B3 /* en.strings */,
-				608F7BA02CC24DAF003A2D50 /* asset.xcassets */,
+				60FEC1FF2D00522400E191E0 /* imchat.bundle */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -807,9 +801,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608F7B9A2CC23E0C003A2D50 /* zh-Hans.strings in Resources */,
-				605F4D512CBE4FA6000308B3 /* en.strings in Resources */,
-				608F7BA12CC24DAF003A2D50 /* asset.xcassets in Resources */,
+				60FEC2002D00522400E191E0 /* imchat.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

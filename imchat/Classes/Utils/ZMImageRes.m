@@ -102,11 +102,11 @@
 }
 
 + (NSString *)chatSystemAvatar {
-    return @"chat_systemAvatar";
+    return @"chat_system";
 }
 
 + (NSString *)chatFaqAvatar {
-    return @"chat_faq_avatar";
+    return @"chat_system_avatar";
 }
 
 + (NSString *)chatUploadFail{
