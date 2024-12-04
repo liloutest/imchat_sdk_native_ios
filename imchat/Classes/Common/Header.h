@@ -7,7 +7,8 @@
 
 #ifndef Header_h
 #define Header_h
-#import "UIImageView+ZMAddon.h"
+#import <imchat/UIImageView+ZMAddon.h>
+//#import "UIImageView+ZMAddon.h"
 #import "UIColor+ZMAddon.h"
 #import "Constant.h"
 #import "ZMStrRes.h"
@@ -38,4 +39,5 @@
 #import "ZMUploadManager.h"
 #import "ZMDatabaseManager.h"
 #import "ZMFAQBaseCell.h"
+#import <imchat/ZMChatViewController.h>
 #endif /* Header_h */
