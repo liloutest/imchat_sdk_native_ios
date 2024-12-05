@@ -69,7 +69,7 @@ Pod::Spec.new do |spec|
   spec.framework = 'UIKit'
   spec.requires_arc = true
   
-  spec.pod_target_xcconfig = {'VALID_ARCHS' => 'arm64 x86_64', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','ARCHS' => '$(ARCHS_STANDARD_64_BIT)','OTHER_LDFLAGS' => '-ObjC','HEADER_SEARCH_PATHS' => ['$(inherited)','$(PODS_ROOT)/Headers/Public','$(SRCROOT)/imchat/**'].join(' ') ,'GCC_PRECOMPILE_PREFIX_HEADER' => 'YES','GCC_PREFIX_HEADER' => '$(PODS_TARGET_SRCROOT)/imchat/Classes/**/*.h','CLANG_ENABLE_MODULES' => 'YES' }
+  spec.pod_target_xcconfig = {'VALID_ARCHS' => 'arm64 x86_64', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','ARCHS' => '$(ARCHS_STANDARD_64_BIT)','OTHER_LDFLAGS' => '$(inherited) -framework "imchat" -ObjC -all_load','HEADER_SEARCH_PATHS' => ['$(inherited)','$(PODS_ROOT)/Headers/Public','$(SRCROOT)/imchat/**'].join(' ') ,'GCC_PRECOMPILE_PREFIX_HEADER' => 'YES','GCC_PREFIX_HEADER' => '$(PODS_TARGET_SRCROOT)/imchat/Classes/**/*.h','CLANG_ENABLE_MODULES' => 'YES' }
   #spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   #spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64','ARCHS' => '$(ARCHS_STANDARD_64_BIT)'}
     spec.user_target_xcconfig = {
