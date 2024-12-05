@@ -24,14 +24,25 @@
 {
     @try {
         ZMChatViewController *vc = [ZMChatViewController new];
+        IMInitSDKModel *model = [IMInitSDKModel new];
+        model.identityID = identityID;
+        model.sign = sign;
+        model.nickId = nickId;
+        model.nickName = nickName;
+    //    model.device
+        model.headIcon = headIcon;
+        model.phone = phone;
+        model.email = email;
+        model.langType = langType;
+        model.source = source;
+        model.extraInfo = extraInfo;
         
-    //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    //    [defaults setObject:vc.nickId forKey:@"nickId"];
-    //    [defaults setObject:vc.nickName forKey:@"nickName"];
-    //    [defaults setObject:vc.merchantId forKey:@"merchantId"];
-    //    [defaults synchronize];
-        
-    //    vc.nickId =
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:model.nickId forKey:@"nickId"];
+        [defaults setObject:model.nickName forKey:@"nickName"];
+        [defaults setObject:model.identityID forKey:@"merchantId"];
+        [defaults synchronize];
+        vc.paramModel = model;
         
         // open vc
         UIViewController *controller = [ZMCommon viewControllerWithWindow:nil];
