@@ -120,6 +120,8 @@
 		608F7BAD2CC656CF003A2D50 /* ZMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7BAB2CC656CF003A2D50 /* ZMTextView.m */; };
 		608F7BB02CC65989003A2D50 /* ZMChatToolBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 608F7BAE2CC65989003A2D50 /* ZMChatToolBtn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		608F7BB12CC65989003A2D50 /* ZMChatToolBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F7BAF2CC65989003A2D50 /* ZMChatToolBtn.m */; };
+		60AFD3E52D01752000FB2A24 /* IMInitSDKModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 60AFD3E32D01752000FB2A24 /* IMInitSDKModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60AFD3E62D01752000FB2A24 /* IMInitSDKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AFD3E42D01752000FB2A24 /* IMInitSDKModel.m */; };
 		60B5847E2CDA1DAE00DE186C /* ZMUploadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B5847C2CDA1DAE00DE186C /* ZMUploadManager.h */; };
 		60B5847F2CDA1DAE00DE186C /* ZMUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B5847D2CDA1DAE00DE186C /* ZMUploadManager.m */; };
 		60B584822CDB1AAC00DE186C /* ZMUploadQueueTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B584802CDB1AAC00DE186C /* ZMUploadQueueTask.h */; };
@@ -282,6 +284,8 @@
 		608F7BAB2CC656CF003A2D50 /* ZMTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTextView.m; sourceTree = "<group>"; };
 		608F7BAE2CC65989003A2D50 /* ZMChatToolBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMChatToolBtn.h; sourceTree = "<group>"; };
 		608F7BAF2CC65989003A2D50 /* ZMChatToolBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMChatToolBtn.m; sourceTree = "<group>"; };
+		60AFD3E32D01752000FB2A24 /* IMInitSDKModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMInitSDKModel.h; sourceTree = "<group>"; };
+		60AFD3E42D01752000FB2A24 /* IMInitSDKModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMInitSDKModel.m; sourceTree = "<group>"; };
 		60B5847C2CDA1DAE00DE186C /* ZMUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMUploadManager.h; sourceTree = "<group>"; };
 		60B5847D2CDA1DAE00DE186C /* ZMUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMUploadManager.m; sourceTree = "<group>"; };
 		60B584802CDB1AAC00DE186C /* ZMUploadQueueTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMUploadQueueTask.h; sourceTree = "<group>"; };
@@ -394,6 +398,8 @@
 				608F400C2CC8ABF800596F93 /* Net */,
 				607554572CBFADD6008E989A /* ZMMessage.h */,
 				607554582CBFADD6008E989A /* ZMMessage.m */,
+				60AFD3E32D01752000FB2A24 /* IMInitSDKModel.h */,
+				60AFD3E42D01752000FB2A24 /* IMInitSDKModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -668,6 +674,7 @@
 				607554552CBFAC6F008E989A /* ZMMessageCell.h in Headers */,
 				603675C62D0002170059BA3E /* ZMTableHeaderView.h in Headers */,
 				608F7B562CC0A9DA003A2D50 /* ZMChatInputToolbar.h in Headers */,
+				60AFD3E52D01752000FB2A24 /* IMInitSDKModel.h in Headers */,
 				608F7B462CBFCBEC003A2D50 /* ZMTextMsgCell.h in Headers */,
 				608E2D3B2CB8D968008F8CE1 /* Constant.h in Headers */,
 				608F7B522CBFCF27003A2D50 /* ZMFAQPointMsgCell.h in Headers */,
@@ -883,6 +890,7 @@
 				603675D52D0007C30059BA3E /* Msggateway.pbobjc.m in Sources */,
 				608F7B6D2CC0EEB3003A2D50 /* UIImage+ZMAddon.m in Sources */,
 				603675C22D0002170059BA3E /* ZMLikeButton.m in Sources */,
+				60AFD3E62D01752000FB2A24 /* IMInitSDKModel.m in Sources */,
 				605147AF2CC7A8A9004C4B7A /* ZMLabel.m in Sources */,
 				608F7B752CC0EF6E003A2D50 /* ZMColorRes.m in Sources */,
 				608F40072CC8A0E700596F93 /* ZMApis.m in Sources */,

@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZMCommon : NSObject
 
++ (NSString *)langCodeWithLangType:(IMLangType)type;
+
++ (UIViewController *)viewControllerWithWindow:(UIWindow *)window ;
+
 + (BOOL)isHttp:(NSString *)url;
 
 + (CGFloat)calculateHeightWithText:(NSString *)text maxWidth:(CGFloat)width font:(UIFont *)font;

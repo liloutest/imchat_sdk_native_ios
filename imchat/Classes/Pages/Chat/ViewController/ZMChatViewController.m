@@ -58,8 +58,8 @@
 //    [self layouts];
     
     @try {
-        [ZMMessageManager sharedInstance].identityID = _merchantId;
-        [[ZMNetworkManager sharedManager] setCustomGlobalHeaders:@{@"lbeSign": @"b184b8e64c5b0004c58b5a3c9af6f3868d63018737e68e2a1ccc61580afbc8f112119431511175252d169f0c64d9995e5de2339fdae5cbddda93b65ce305217700",@"Content-Type":@"application/json",@"lbeIdentity":[ZMMessageManager sharedInstance].identityID ?: @""}.mutableCopy];
+        [ZMMessageManager sharedInstance].identityID = _paramModel.identityID;
+        [[ZMNetworkManager sharedManager] setCustomGlobalHeaders:@{@"lbeSign": kZMSafeStr(_paramModel.sign),@"Content-Type":@"application/json",@"lbeIdentity":[ZMMessageManager sharedInstance].identityID ?: @""}.mutableCopy];
         [self mockLayout];
         
         
@@ -112,7 +112,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [ZMMessageManager sharedInstance].nickId = [defaults valueForKey:@"nickId1"] ?: @"";
     
-    if(![[ZMMessageManager sharedInstance].nickId isEqualToString:_nickId] )return;
+    if(![[ZMMessageManager sharedInstance].nickId isEqualToString:_paramModel.nickId] )return;
     
     [ZMMessageManager sharedInstance].sessionId = [defaults valueForKey:@"sessionId"] ?: @"";
     [ZMMessageManager sharedInstance].currentUserId = [defaults valueForKey:@"currentUserId"] ?: @"";
@@ -163,15 +163,15 @@
     
 //    [SVProgressHUD show];
     ZMCreateSessionReqModel *sessionModel = [ZMCreateSessionReqModel new];
-    sessionModel.extraInfo = @"extraInfo";
-    sessionModel.headIcon = @"https://img1.baidu.com/it/u=1653751609,236581088&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1729270800&t=36600cf9ed9f2ffddb3a3bb1ec5bd144";
-    sessionModel.device = [UIDevice currentDevice].model;
-    sessionModel.language = @"zh";
-    sessionModel.source = @"hello";
-    sessionModel.nickId = _nickId;//@"Lilou103112__118_11@@!";// old : Lilou103112; Lilou103112__118_11
-    sessionModel.nickName = _nickName;//@"1-118-Lilou1314520";
-    sessionModel.identityID = _merchantId;
-    sessionModel.uid = _nickId;
+    sessionModel.extraInfo = [_paramModel.extraInfo yy_modelToJSONString];//@"extraInfo";
+    sessionModel.headIcon = _paramModel.headIcon;//@"https://img1.baidu.com/it/u=1653751609,236581088&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1729270800&t=36600cf9ed9f2ffddb3a3bb1ec5bd144";
+    sessionModel.device = _paramModel.device;//[UIDevice currentDevice].model;
+    sessionModel.language = [ZMCommon langCodeWithLangType:_paramModel.langType];
+    sessionModel.source = _paramModel.source;
+    sessionModel.nickId = _paramModel.nickId;//_nickId;//@"Lilou103112__118_11@@!";// old : Lilou103112; Lilou103112__118_11
+    sessionModel.nickName = _paramModel.nickName;//_nickName;//@"1-118-Lilou1314520";
+    sessionModel.identityID = _paramModel.identityID;//_merchantId;
+    sessionModel.uid = sessionModel.nickId;
     
     [ZMHttpHelper createSessionWith:sessionModel success:^(NSDictionary *response) {
         [SVProgressHUD dismiss];
@@ -190,7 +190,7 @@
         [defaults setObject:model.token forKey:@"token"];
         [defaults setObject:sessionModel.nickName forKey:@"nickName"];
         [defaults setObject:sessionModel.identityID forKey:@"identityID"];
-        [defaults setObject:self.nickId forKey:@"nickId1"];
+        [defaults setObject:self.paramModel.nickId forKey:@"nickId1"];
         [defaults synchronize];
         
         // 获取超时配置

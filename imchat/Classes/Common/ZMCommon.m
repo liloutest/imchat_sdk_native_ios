@@ -12,6 +12,37 @@
 
 @implementation ZMCommon
 
++ (NSString *)langCodeWithLangType:(IMLangType)type {
+    switch (type) {
+        case IMLangTypeZh:
+            return @"zh";
+        case IMLangTypeEn:
+            return @"en";
+        case IMLangTypeVi:
+            return @"vi";
+        default:
+            return @"zh";
+    }
+}
+
++ (UIViewController *)viewControllerWithWindow:(UIWindow *)window {
+  UIWindow *windowToUse = window;
+  if (windowToUse == nil) {
+    for (UIWindow *window in [UIApplication sharedApplication].windows) {
+      if (window.isKeyWindow) {
+        windowToUse = window;
+        break;
+      }
+    }
+  }
+
+  UIViewController *topController = windowToUse.rootViewController;
+  while (topController.presentedViewController) {
+    topController = topController.presentedViewController;
+  }
+  return topController;
+}
+
 + (BOOL)isHttp:(NSString *)url {
     return [url hasPrefix:@"http"];
 }

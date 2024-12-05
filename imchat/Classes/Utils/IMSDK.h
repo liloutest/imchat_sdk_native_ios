@@ -24,8 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
                         email:(NSString *)email                   // 邮箱
                      language:(IMLangType)langType                // 语言类型：https://www.cnblogs.com/woshimrf/p/language-code-lcid.html (Language code列)  约定规则： zh,en,vi
                        source:(NSString *)source                  // 来源：接入方业务传入
-                    extraInfo:(NSDictionary *)extraInfo           // 自定义传入参数 { @"xxx": @"13323232", @"yyy": @"sdfsd"}
-                   controller:(UIViewController *)controller;
+                    extraInfo:(NSDictionary *)extraInfo;           // 自定义传入参数 { @"xxx": @"13323232", @"yyy": @"sdfsd"}
 //                 successBlock:(IMInitSuccessBlock)successBlock    // 初始化sdk成功回调
 //                    failBlock:(IMInitFailBlock)failBlock;         // 初始化sdk失败回调
 
